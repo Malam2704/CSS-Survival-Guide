@@ -1,0 +1,25 @@
+/*  Group 6: ["Hip", "Hip"]
+    Spring 2021
+    ISTE240 Group Project
+    Stylesheet: CSS Survival Guide */
+
+body {
+    background-color: #24243C;
+    color: #E6E6E6;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #E6E6E6;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #396BF7;
+  }
