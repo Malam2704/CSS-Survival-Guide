@@ -1,4 +1,0 @@
-Practice test
-to figure out the git workflow
-
-TEST_KA 12345
