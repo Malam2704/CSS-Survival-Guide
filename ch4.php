@@ -3,27 +3,11 @@
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
 <!-- Chapter 4: Text Properties -->
-<html lang="en">
-    <head>
-        <!-- Your basic head code where it shows what the page is and
-        getting the viewports and reference css sheets -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> ISTE 240 Group Project</title> 
-        <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-    </head>
-    <body>
-        <div>
-            <header>
-
-            </header>
-
-            <nav>
-
-            </nav>
-
-            <main>
-                <h2>Chapter 4: Text Properties</h2>
+<?php
+    $pageName = "Chapter 4: Text Properties";
+    $path = "./";
+    include $path . "assets/inc/header.php";
+?>
                 <p>Beyond color, there are numerous characteristics about text that can be manipulated.</p>
 
                 <h3>Font-Family</h3>
