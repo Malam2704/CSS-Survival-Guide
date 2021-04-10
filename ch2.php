@@ -1,29 +1,12 @@
-<!DOCTYPE html>
 <!-- Group 6: ["Hip", "Hip"] -->
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
 <!-- Chapter 2: CSS Selectors -->
-<html lang="en">
-    <head>
-        <!-- Your basic head code where it shows what the page is and
-        getting the viewports and reference css sheets -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> ISTE 240 Group Project</title> 
-        <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-    </head>
-    <body>
-        <div>
-            <header>
-
-            </header>
-
-            <nav>
-
-            </nav>
-
-            <main>
-                <h2>Chapter 2: CSS Selectors</h2>
+<?php
+    $pageName = "Chapter 2: CSS Selectors";
+    $path = "./";
+    include $path . "assets/inc/header.php";
+?>
                 <p>How do you target the components of a web page that need to be styled?  CSS selectors!</p>
                 <p>A CSS selector is the first part of a CSS rule and tells the browser which HTML element(s) should be selected to receive the specified property values within the rule.</p>
                 <p>There are many CSS selectors and many combinations of CSS selectors that will allow specific HTML elements to be targeted, but the simplest are by type, id, and class.</p>

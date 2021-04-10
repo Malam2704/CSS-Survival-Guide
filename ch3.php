@@ -1,29 +1,12 @@
-<!DOCTYPE html>
 <!-- Group 6: ["Hip", "Hip"] -->
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
 <!-- Chapter 3: CSS Properties (Color) -->
-<html lang="en">
-    <head>
-        <!-- Your basic head code where it shows what the page is and
-        getting the viewports and reference css sheets -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> ISTE 240 Group Project</title> 
-        <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-    </head>
-    <body>
-        <div>
-            <header>
-
-            </header>
-
-            <nav>
-
-            </nav>
-
-            <main>
-                <h2>Chapter 3: CSS Properties (Color)</h2>
+<?php
+    $pageName = "Chapter 3: CSS Properties";
+    $path = "./";
+    include $path . "assets/inc/header.php";
+?>
                 <p>CSS properties tell the browser how to style a selected element.  There are hundreds of properties that can be modified and some of the most fundamental will be addressed.</p>
 
                 <h3>Color</h3>

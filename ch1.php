@@ -1,29 +1,12 @@
-<!DOCTYPE html>
 <!-- Group 6: ["Hip", "Hip"] -->
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
 <!-- Chapter 1: How to Add CSS to HTML -->
-<html lang="en">
-    <head>
-        <!-- Your basic head code where it shows what the page is and
-        getting the viewports and reference css sheets -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> ISTE 240 Group Project</title> 
-        <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-    </head>
-    <body>
-        <div>
-            <header>
-
-            </header>
-
-            <nav>
-
-            </nav>
-
-            <main>
-                <h2>Chapter 1: How to Add CSS to HTML</h2>
+<?php
+    $pageName = "Chapter 1: How to Add CSS to HTML";
+    $path = "./";
+    include $path . "assets/inc/header.php";
+?>
                 <p>Before getting started with CSS, make sure you have the following:</p>
                     <ul>
                         <li>An understanding of HTML (Hypertext Markup Language)</li>

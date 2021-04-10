@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <!-- Group 6: ["Hip", "Hip"] -->
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
