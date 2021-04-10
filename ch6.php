@@ -1,30 +1,12 @@
-<!DOCTYPE html>
 <!-- Group 6: ["Hip", "Hip"] -->
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
 <!-- Chapter 6: Width, Height, Overflow -->
-<html lang="en">
-    <head>
-        <!-- Your basic head code where it shows what the page is and
-        getting the viewports and reference css sheets -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> ISTE 240 Group Project</title> 
-        <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-    </head>
-    <body>
-        <div>
-            <header>
-
-            </header>
-
-            <nav>
-
-            </nav>
-
-            <main>
-                <h2>Chapter 6: Width, Height, Overflow</h2>
-                
+<?php
+    $pageName = "Chapter 6: Width, Height, Overflow";
+    $path = "./";
+    include $path . "assets/inc/header.php";
+?>
                 <h3>Width</h3>
                 <p>The width property controls the width of an element.   By default, a &lt;div&gt; element takes up 100% width of a page unless a specific width is specified.  Several other elements can have their width adjusted such as paragraphs, images, input fields, etc.  It is important to note that padding, borders, and margins are NOT included in the width of an element.  These properties will be discussed in the next chapter.</p>
                 <p>The maximum and/or minimum width of elements can also be specified using the max-width and min-width properties.  These properties will override width.</p>

@@ -22,7 +22,7 @@
                 <ul>
                     <li ><a href="index.php">Home Page</a></li>
                     <li ><a href="ch1.php">Chapter 1 - Adding CSS To HTML</a></li>
-                    <li ><a href="ch2php">Chapter 2 - CSS Selectors</a></li>
+                    <li ><a href="ch2.php">Chapter 2 - CSS Selectors</a></li>
                     <li ><a href="ch3.php">Chapter 3 - CSS Properties</a></li>
                     <li ><a href="ch4.php">Chapter 4 - Text Properties</a></li>
                     <li ><a href="ch5.php">Chapter 5 - CSS Layout</a></li>
