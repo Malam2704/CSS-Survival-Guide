@@ -1,33 +1,12 @@
-<!DOCTYPE html>
 <!-- Group 6: ["Hip", "Hip"] -->
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
 <!-- Chapter 8: Position -->
-<html lang="en">
-    <head>
-        <!-- Your basic head code where it shows what the page is and
-        getting the viewports and reference css sheets -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> ISTE 240 Group Project</title> 
-        <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-    </head>
-    <body>
-        <div>
-            <header>
-
-            </header>
-
-            <nav>
-
-            </nav>
-
-            <main>
-<<<<<<< HEAD
-                    <h2>Chapter 8: Position</h2>
-                    <p></p>
-=======
-                <h2>Chapter 8: Position</h2>
+<?php
+    $pageName = "Chapter 8: Position";
+    $path = "./";
+    include $path . "assets/inc/header.php";
+?>
                 <p>The position property specifies how an element will be displayed on a page.  Once the position property is set, the top, right, bottom, and left properties can then be used to adjust an element’s location.  The five position values – static, relative, absolute, fixed, and sticky – will be discussed with examples.</p>
 
                 <h3>Static</h3>
@@ -76,7 +55,6 @@
                     </ul>
                 <p>For Example,</p>
                     <!-- insert example here -->
->>>>>>> 6d8241c45bfd8dc00f0fb030fbcf6c30782d3807
 
             </main>
 

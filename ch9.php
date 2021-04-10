@@ -1,33 +1,12 @@
-<!DOCTYPE html>
 <!-- Group 6: ["Hip", "Hip"] -->
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
 <!-- Chapter 9: Pseudo-Classes -->
-<html lang="en">
-    <head>
-        <!-- Your basic head code where it shows what the page is and
-        getting the viewports and reference css sheets -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> ISTE 240 Group Project</title> 
-        <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-    </head>
-    <body>
-        <div>
-            <header>
-
-            </header>
-
-            <nav>
-
-            </nav>
-
-            <main>
-<<<<<<< HEAD
-                    <h2>Chapter 9: Pseudo-Classes</h2>
-                    <p></p>
-=======
-                <h2>Chapter 9: Pseudo-Classes</h2>
+<?php
+    $pageName = "Chapter 9: Pseudo-Classes";
+    $path = "./";
+    include $path . "assets/inc/header.php";
+?>
                 <p>A pseudo-class can be used to specify a particular state of an element.  The generic format of pseudo-classes is:</p>
                 <p>
                     selector:pseudo-class { <br/>
@@ -43,7 +22,6 @@
                     </ul>
                 <p>For Example,</p>
                     <!-- insert example here -->
->>>>>>> 6d8241c45bfd8dc00f0fb030fbcf6c30782d3807
 
             </main>
 

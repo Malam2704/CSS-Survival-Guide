@@ -3,34 +3,13 @@
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
 <!-- Chapter 10: Order and Specificity -->
-<html lang="en">
-    <head>
-        <!-- Your basic head code where it shows what the page is and
-        getting the viewports and reference css sheets -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> ISTE 240 Group Project</title> 
-        <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-    </head>
-    <body>
-        <div>
-            <header>
-
-            </header>
-
-            <nav>
-
-            </nav>
-
-            <main>
-<<<<<<< HEAD
-                    <h2>Chapter 10: Order and Specificity</h2>
-                    <p></p>
-=======
-                <h2>Chapter 10: Order and Specificity</h2>
+<?php
+    $pageName = "Chapter 10: Order and Specificity";
+    $path = "./";
+    include $path . "assets/inc/header.php";
+?>
                 <p>Some CSS rules are considered to be more specific than others.  When rules conflict with one another, CSS specificity determines what rules are applied to an element.  Generally, an id is more specific than a class, which is more specific than an element selector.  (id > class > element). </p>
                 <p>In the case that two selectors are equally specific, the last one wins because CSS rules are applied top down.  If two identical CSS rules exist, the one further down the page will overwrite the previous rule and that rule’s value will be applied.  For example, body {color: blue;} written toward the top of the CSS stylesheet would have no effect if the rule body {color: green;} is written further down the stylesheet.  The color green would be applied to the body.</p>
->>>>>>> 6d8241c45bfd8dc00f0fb030fbcf6c30782d3807
 
             </main>
 

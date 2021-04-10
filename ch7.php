@@ -1,29 +1,12 @@
-<!DOCTYPE html>
 <!-- Group 6: ["Hip", "Hip"] -->
 <!-- Spring 2021 -->
 <!-- ISTE240 Group Project -->
 <!-- Chapter 7: CSS Box Model -->
-<html lang="en">
-    <head>
-        <!-- Your basic head code where it shows what the page is and
-        getting the viewports and reference css sheets -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title> ISTE 240 Group Project</title> 
-        <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-    </head>
-    <body>
-        <div>
-            <header>
-
-            </header>
-
-            <nav>
-
-            </nav>
-
-            <main>
-                <h2>7: CSS Box Model</h2>
+<?php
+    $pageName = "Chapter 7: CSS Box Model";
+    $path = "./";
+    include $path . "assets/inc/header.php";
+?>
                 <p>It is important to understand the box model in order to design and layout a web page.  The box model simply means that every element on a web page is considered a box by the browser that consists of content, padding, border, and margin.</p>
                     <!-- insert BOX MODEL DIAGRAM here -->
                 <p>The terms “content”, “padding,” “border”, and “margin” can be defined as the following:</p>
