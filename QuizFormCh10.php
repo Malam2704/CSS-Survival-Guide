@@ -8,9 +8,10 @@ $pageName = "Chapter 10 Quiz";
     include $path . "assets/inc/header.php";
 ?>
     
-    <?php
-    if(isset($_POST['q1']) && isset($_POST['q2']) && isset($_POST['q3']) && isset($_POST['q4']) && isset($_POST['q5'])) {
-       
+<?php
+    if(isset($_POST['q1']) && isset($_POST['q2']) 
+        && isset($_POST['q3']) && isset($_POST['q4']) && isset($_POST['q5'])) {
+        
         $answer1 = $_POST['q1'];
         $answer2 = $_POST['q2'];
         $answer3 = $_POST['q3'];
@@ -27,15 +28,18 @@ $pageName = "Chapter 10 Quiz";
         if ($answer5 == "b") { $totalCorrect++; } else {$wrong = $wrong . "<br/>5";}
 
         if($totalCorrect != 5) {
-            echo "<div id='results' style='color:red; font-weight:bold';>$totalCorrect / 5 correct</div><br/>";
-            echo "<div id='wrong' style='color:red; font-weight:bold';>$wrong</div><br/>";
+            echo "<div id='results' style='color:red; font-weight:bold';>" 
+                . $totalCorrect . "/ 5 correct</div><br/>";
+            echo "<div id='wrong' style='color:red; font-weight:bold';>" 
+                . $wrong ."</div><br/>";
             
         } else {
-            echo "<div id='results' style='color:green; font-weight:bold';>$totalCorrect / 5 correct</div><br/>";
+            echo "<div id='results' style='color:green; font-weight:bold';>"
+                 . $totalCorrect . "/ 5 correct</div><br/>";
         }      
     }
 
-    ?>
+?>
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" id="quiz">
         <b>Question 1.
         <br>True or false?  The order of rules on a style sheet matters.<br></b>
