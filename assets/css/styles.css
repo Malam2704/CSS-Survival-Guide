@@ -3,35 +3,69 @@
     ISTE240 Group Project
     Stylesheet: CSS Survival Guide */
 
-<<<<<<< HEAD
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #24243C;
-    color: #E6E6E6;
-}
-=======
-body {
-    background-color: #24243C;
-    color: #E6E6E6;
+  background-color: #24243C;
+  color: #E6E6E6;
 }
 
 /* table */
 table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #E6E6E6;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #396BF7;
-  }
->>>>>>> 6d8241c45bfd8dc00f0fb030fbcf6c30782d3807
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #E6E6E6;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #396BF7;
+}
+
+nav{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 0.5em solid #005C61;
+  margin-bottom: 2em;
+}
+nav ul{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: bold;
+  list-style-type: none;
+}
+nav li{
+  width: 100%;
+  border: 0.15em solid orangered;
+}
+nav li a{
+  text-decoration: none;
+}
+
+a:link{color: orangered}
+a:visited{color: orange}
+nav li:hover,a:hover{color: blue; border-color: orangered;}
+a:active{color: silver;}
+
+@media only screen and (max-width:1000px){
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li{
+        width: 70%;
+        margin: .25em;
+        border: 0.2em solid orangered;
+        padding: .25em;
+    }
+}
+
