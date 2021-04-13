@@ -9,16 +9,12 @@
 		include "conn.php";
 
 		if($mysqli){
-			$stmp = $mysqli->prepare("INSERT INTO `240Login` (`uname`, `pass`) VALUES (?, ?)");
-			// echo password_hash($_POST['pass'], PASSWORD_DEFAULT);
-			$hasy = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+			$stmp = $mysqli->prepare("INSERT INTO `groupProject` (`uname`, `pass`) VALUES (?, ?)");
+			$hashedPassword = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-			$stmp->bind_param("ss",$_POST['uname'],$hasy);
-
+			$stmp->bind_param("ss",$_POST['uname'],$hashedPassword);
 			$stmp->execute();
-
 			$stmp->close();
-
 			die("User registered!");
 		}
 	}
