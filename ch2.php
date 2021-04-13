@@ -65,9 +65,9 @@
 
             </form>
 
-            <footer>
-
-            </footer>
+<?php
+    include $path . "assets/inc/footer.php";
+?>
         </div>
     </body>
 </html>

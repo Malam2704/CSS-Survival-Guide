@@ -43,7 +43,7 @@
                 <p>The float property takes an element out of its normal position and shifts it to the left or right until it reaches the edge of its containing box or another floated element.  Typically float is used to wrap text around images.  The default value for float is none, and left, right, or inherit (gets float value of its parent) can be specified.</p>
                 <p>For Example,</p>
                     <!-- insert example here -->
-                <p><b>Tip:</b> When floating a div, give it a width.  Otherwise, the div tries to take up 100% of the width and nothing can float around it.</p>
+                <p><span class="tip">Tip:</span> When floating a div, give it a width.  Otherwise, the div tries to take up 100% of the width and nothing can float around it.</p>
 
                 <h3>Clear</h3>
                 <p>The clear property determines whether an element must be moved below floating elements (cleared).  Typical values are:</p>
@@ -62,9 +62,9 @@
 
             </form>
 
-            <footer>
-
-            </footer>
+<?php
+    include $path . "assets/inc/footer.php";
+?>
         </div>
     </body>
 </html>

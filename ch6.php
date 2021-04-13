@@ -11,7 +11,7 @@
                 <p>The width property controls the width of an element.   By default, a &lt;div&gt; element takes up 100% width of a page unless a specific width is specified.  Several other elements can have their width adjusted such as paragraphs, images, input fields, etc.  It is important to note that padding, borders, and margins are NOT included in the width of an element.  These properties will be discussed in the next chapter.</p>
                 <p>The maximum and/or minimum width of elements can also be specified using the max-width and min-width properties.  These properties will override width.</p>
                 <p>The default width value of an element is auto, where the browser automatically calculates the width.  Width values can be expressed with length values (px, cm, etc.) and percentage values (50%, etc.).</p>
-                <p><b>Tip:</b> Only specify the width OR height value for an image so that the browser can automatically determine the unspecified value and maintain the proportions of the image.</p>
+                <p><span class="tip">Tip:</span> Only specify the width OR height value for an image so that the browser can automatically determine the unspecified value and maintain the proportions of the image.</p>
                 <p>For Example,</p>
                     <!-- insert example here -->
 
@@ -19,7 +19,7 @@
                 <p>The height property controls the height of an element.   Like the width property, it is important to note that padding, borders, and margins are NOT included in the height of an element.</p>
                 <p>The maximum and/or minimum height of elements can also be specified using the max-height and min-height properties.  These properties will override height.</p>
                 <p>The default height value of an element is auto, where the browser automatically calculates the height to ensure that its content is properly displayed.  Height values can be expressed with length values (px, cm, etc.) and percentage values (50%, etc.).  The overflow property determines what happens when content does not fit within the specified height of its container.</p>
-                <p><b>Tip: </b> Only specify the width OR height value for an image so that the browser can automatically determine the unspecified value and maintain the proportions of the image.</p>
+                <p><span class="tip">Tip:</span> Only specify the width OR height value for an image so that the browser can automatically determine the unspecified value and maintain the proportions of the image.</p>
                 <p>Height Example:</p>
                     <!-- insert example here -->
 
@@ -40,9 +40,9 @@
 
             </form>
 
-            <footer>
-
-            </footer>
+<?php
+    include $path . "assets/inc/footer.php";
+?>
         </div>
     </body>
 </html>
