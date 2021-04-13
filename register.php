@@ -16,6 +16,8 @@
 			$stmp->execute();
 			$stmp->close();
 			die("User registered!");
+			sleep(4);
+			header('Location: index.php');
 		}
 	}
 
@@ -33,6 +35,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Register</title>
+	<link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
  	<style type="text/css">
  		form div{
  			margin: 1em;
