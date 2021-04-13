@@ -2,6 +2,7 @@
 	session_name("danny");
 	session_start();
 
+	$loginattempts = 0;
 	include "../../../MAIN/ma3655/dbconn.php";
 
 	// check fi the passwords are the same:
@@ -21,7 +22,10 @@
 			$_SESSION['login']=true;
 			$_SESSION['name']=$_POST['uname'];
 			header('Location: home.php');
+		}else{
+			$loginattempts += 1;
 		}
+
 		$stmp->close();
 	}
 ?>
@@ -32,7 +36,7 @@
 	<title>Login</title>
 	<link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
  	<style type="text/css">
-		form div{
+		form div,form h1,form h3{
 			margin: 1em;
 		}
  		form div label{
@@ -48,7 +52,9 @@
  	</style>
 </head>
 <body>
+	
 	<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+		<h1>The CSS Survival Guide</h1>
 		<div>
 			User Name:
 			<input type="text" name="uname" size="30" />
@@ -63,7 +69,12 @@
 			<div>
 			<input type="button" value="Register" onclick="window.location='register.php'" />
 			</div>
-		</div>	
+		</div>
+		<?php
+			if($loginattempts >= 1){
+				echo "<h3 style='color:red;'>User does not exist, please register!</h3>";
+			}
+		?>	
 	</form>
 </body>
 </html>
