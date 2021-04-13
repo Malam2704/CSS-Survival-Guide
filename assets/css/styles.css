@@ -3,7 +3,7 @@
     ISTE240 Group Project
     Stylesheet: CSS Survival Guide */
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -11,12 +11,14 @@
 body {
   background-color: #24243C;
   color: #E6E6E6;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* table */
+/* Table */
 table {
   border-collapse: collapse;
-  width: 100%;
+  margin-left:auto; 
+  margin-right:auto;
 }
 
 td, th {
@@ -29,6 +31,7 @@ tr:nth-child(even) {
   background-color: #396BF7;
 }
 
+/* Navigation */
 nav{
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -55,6 +58,69 @@ a:link{color: orangered}
 a:visited{color: orange}
 nav li:hover,a:hover{color: blue; border-color: orangered;}
 a:active{color: silver;}
+
+/* Page Layout & Style */
+h2 {
+  color: orangered;
+}
+
+h3 {
+  color: orange;
+}
+
+h2, h3 {
+  max-width: 1000px;
+  text-align: center;
+}
+
+h4 {
+  color: #396BF7;
+  margin-left: 40px;
+}
+
+h2 + h3 {
+  margin-top: 20px;
+}
+
+p {
+  margin: 20px;
+  max-width: 1000px;
+  text-indent: 20px;
+}
+
+.indent {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.tip {
+  color:orangered;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 10px;
+  max-width: 1000px;
+}
+
+/* Lists */
+ol, ul:not(nav ol, ul) {
+  padding: 10px;
+}
+
+ol li, ul li:not(nav li){
+  padding: 5px;
+  margin-left: 60px;
+}
+
+ul li:not(nav li){
+  padding: 5px;
+  margin-left: 70px;
+  list-style-type: square;
+}
 
 @media only screen and (max-width:1000px){
     nav ul{
