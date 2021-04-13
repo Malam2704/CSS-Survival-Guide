@@ -6,7 +6,7 @@
 		// assuming they are tryting to submit
 		// die('Process the registration now!');
 
-		include "conn.php";
+		include "../../../MAIN/ma3655/dbconn.php";
 
 		if($mysqli){
 			$stmp = $mysqli->prepare("INSERT INTO `groupProject` (`uname`, `pass`) VALUES (?, ?)");

@@ -5,10 +5,10 @@
 	if(isset($_POST['uname']) && $_POST['uname']!=""){
 		die("Check to see if this person exists and matched: " . $_POST['uname']);
 
-		include("conn.php");
+		include "../../../MAIN/ma3655/dbconn.php";
 
 		// Add the star between SELECT and FROM
-		$stmp = $mysqli->prepare("SELECT FROM '240Login' WHERE 'uname' = ? LIMIT 1");
+		$stmp = $mysqli->prepare("SELECT FROM 'groupProject' WHERE 'uname' = ? LIMIT 1");
 
 		$stmp->bind_param("s",$_POST['uname']);
 
