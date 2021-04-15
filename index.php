@@ -60,6 +60,12 @@
 			.clearfix {
 				clear: both;
 			}
+			@media only screen and (max-width:600px){
+			.everything,.headtitle{
+				margin: 0;
+				width: 100%;
+			}
+		}
 		</style>
 	</head>
 	<body>

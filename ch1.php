@@ -7,6 +7,41 @@
     $path = "./";
     $chapNumString = "1";
     include $path . "assets/inc/header.php";
+
+    include "../groupdbconn.php";
+
+    if($mysqli){
+        // if we are adding a new user
+        /*
+            we are using client entered data, therefore we have to use a prepared statement
+            1)prepare the query
+            2)bind
+            3)execute
+            4)close
+        */
+        $stmt = $mysqli->prepare("INSERT INTO `chOneComments` (`uname`, `comment`, `last_modified`) VALUES (?, ?, ?)");
+			$filename = "contact.php";
+			$nowTime = date("F d Y H:i:s.", filemtime($filename));
+			$stmt->bind_param("sss",$_GET["name"],$_GET["com"],$nowTime);
+			$stmt->execute();
+			$stmt->close();
+
+			// get the first and last from the 240Inserttable
+			// get the contents of the table and send back...
+			// $sql = "SELECT Lastname, Age FROM Persons ORDER BY Lastname";
+			$sql = "SELECT * FROM `chOneComments` LIMIT 50";
+			$result = $mysqli->query($sql);
+			// var_dump($result);
+			// $row = $result->fetch_assoc();
+			//$res = $result->fetch_assoc();
+			if($result){
+				// put the first and last elements of the 240Inserttable into 
+				// a php array.
+				while($rowHolder = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+					$records[] = $rowHolder;
+				}
+			}
+	}
 ?>
                 <p>Before getting started with CSS, make sure you have the following:</p>
                     <ul>
@@ -47,9 +82,27 @@
                 <p>&lt;/head&gt;</p>
                 <p>where rel specifies the relationship between the current HTML document and the linked CSS document and href provides the location of the linked document using an absolute or relative URL.</p>
                 <p>External CSS is ideal when styles need to be applied to multiple web pages and can help maintain uniformity among those web pages.  The main benefit is that the look of an entire website can be altered by changing a single file.</p>
-
             </main>
 
+            <h3>Add a Comment</h3>
+            <form action="ch1.php" method="get">		
+                First name: <input type="text" id="first" name="name" />
+                <br>
+                Comment: <textarea name="com" id="comment" style="width: 100%;" rows="10"></textarea>
+                <input type="submit" value="Add to the List"/>
+            </form>
+            <hr/>
+            <div class="commentSection">
+            
+            </div>
+                <ul>
+                <?php
+                    foreach($records as $this_row){
+                        //echo $this_row;
+                        echo '<li> Id: ' . $this_row['id'] . "<br> Name:" . $this_row['uname'] . "<br> Comment: " . $this_row['comment'] . "<br> Last Modified: " . $this_row['last_modified'] . '</li><br><br>';
+                    }
+                ?>
+                </ul>
             <form>
 
             </form>
