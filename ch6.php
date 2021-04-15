@@ -5,6 +5,7 @@
 <?php
     $pageName = "Chapter 6: Width, Height, Overflow";
     $path = "./";
+    $chapNumString = "6";
     include $path . "assets/inc/header.php";
 ?>
                 <h3>Width</h3>

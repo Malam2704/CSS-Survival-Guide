@@ -5,6 +5,7 @@
 <?php
     $pageName = "Chapter 5: CSS Layout";
     $path = "./";
+    $chapNumString = "5";
     include $path . "assets/inc/header.php";
 ?>
         

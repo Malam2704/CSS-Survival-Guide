@@ -5,6 +5,7 @@
 <?php
     $pageName = "Chapter 2: CSS Selectors";
     $path = "./";
+    $chapNumString = "2";
     include $path . "assets/inc/header.php";
 ?>
                 <p>How do you target the components of a web page that need to be styled?  CSS selectors!</p>

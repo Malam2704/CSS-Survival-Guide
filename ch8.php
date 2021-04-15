@@ -5,6 +5,7 @@
 <?php
     $pageName = "Chapter 8: Position";
     $path = "./";
+    $chapNumString = "8";
     include $path . "assets/inc/header.php";
 ?>
                 <p>The position property specifies how an element will be displayed on a page.  Once the position property is set, the top, right, bottom, and left properties can then be used to adjust an element’s location.  The five position values – static, relative, absolute, fixed, and sticky – will be discussed with examples.</p>

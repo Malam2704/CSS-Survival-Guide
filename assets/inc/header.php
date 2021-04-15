@@ -24,6 +24,8 @@
 
             <nav>
                 <ul>
+                    <!-- Songyuan's image logo will be dropped here -->
+                    <li> <img src="asset" alt=""></li>
                     <li ><a href="index.php">Home Page</a></li>
                     <li ><a href="ch1.php">Chapter 1: Adding CSS To HTML</a></li>
                     <li ><a href="ch2.php">Chapter 2: CSS Selectors</a></li>

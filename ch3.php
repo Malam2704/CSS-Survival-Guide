@@ -5,6 +5,7 @@
 <?php
     $pageName = "Chapter 3: CSS Properties";
     $path = "./";
+    $chapNumString = "3";
     include $path . "assets/inc/header.php";
 ?>
                 <p>CSS properties tell the browser how to style a selected element.  There are hundreds of properties that can be modified and some of the most fundamental will be addressed.</p>

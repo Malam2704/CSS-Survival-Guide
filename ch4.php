@@ -5,6 +5,7 @@
 <?php
     $pageName = "Chapter 4: Text Properties";
     $path = "./";
+    $chapNumString = "4";
     include $path . "assets/inc/header.php";
 ?>
                 <p>Beyond color, there are numerous characteristics about text that can be manipulated.</p>

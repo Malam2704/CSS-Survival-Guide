@@ -3,7 +3,7 @@
 	session_start();
 
 	$loginattempts = 0;
-	include "../../../MAIN/ma3655/dbconn.php";
+	include "../groupdbconn.php";
 
 	// check fi the passwords are the same:
 	if(isset($_POST['uname']) && $_POST['uname']!=""){
@@ -31,50 +31,58 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<title>Login</title>
-	<link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
- 	<style type="text/css">
-		form div,form h1,form h3{
-			margin: 1em;
-		}
- 		form div label{
- 			float: left;
- 			width: 10%;
- 		}
- 		form div.radio {
- 			float: left;
- 		}
- 		.clearfix {
- 			clear: both;
- 		}
- 	</style>
-</head>
-<body>
-	
-	<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-		<h1>The CSS Survival Guide</h1>
-		<div>
-			User Name:
-			<input type="text" name="uname" size="30" />
-		</div>
-		<div>
-			Password:
-			<input type="password" name="pass" size="30" />
-		</div>
-		<div class="clearfix">
-			<input type="reset" value="Reset Form" />
-			<input type="submit" value="Enter Site" />
-			<div>
-			<input type="button" value="Register" onclick="window.location='register.php'" />
-			</div>
-		</div>
-		<?php
-			if($loginattempts >= 1){
-				echo "<h3 style='color:red;'>User does not exist, please register!</h3>";
+	<head>
+		<meta charset="utf-8" />
+		<title>Login</title>
+		<link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
+		<style type="text/css">
+			.headtitle{
+				color: orange;
+				font-size: 250%;
+				margin-top: 220px;
 			}
-		?>	
-	</form>
-</body>
+			.everything{
+				width: 500px;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			form div,form h1,form h3{
+				margin: 1em;
+			}
+			form div label{
+				float: left;
+				width: 10%;
+			}
+			form div.radio {
+				float: left;
+			}
+			.clearfix {
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+			<h1 class="everything headtitle">The CSS Survival Guide</h1>
+			<div class="everything">
+				User Name:
+				<input type="text" name="uname" size="30" />
+			</div>
+			<div class="everything">
+				Password:
+				<input type="password" name="pass" size="30" />
+			</div>
+			<div class="clearfix everything">
+				<input type="reset" value="Reset Form" style="margin: 1.5em; padding: 0.5em"/>
+				<input type="submit" value="Enter Site" style="margin: 1.5em; padding: 0.5em"/>
+				<input type="button" value="Register" style="margin: 1.5em; padding: 0.5em" onclick="window.location='register.php'" />
+			</div>
+			<?php
+				if($loginattempts >= 1){
+					echo "<h3 style='color:red;'>User does not exist, please register!</h3>";
+				}
+			?>	
+		</form>
+	</body>
 </html>

@@ -5,6 +5,7 @@
 <?php
     $pageName = "Chapter 9: Pseudo-Classes";
     $path = "./";
+    $chapNumString = "9";
     include $path . "assets/inc/header.php";
 ?>
                 <p>A pseudo-class can be used to specify a particular state of an element.  The generic format of pseudo-classes is:</p>

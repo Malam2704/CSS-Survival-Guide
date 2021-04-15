@@ -5,6 +5,7 @@
 <?php
     $pageName = "Chapter 10: Order and Specificity";
     $path = "./";
+    $chapNumString = "10";
     include $path . "assets/inc/header.php";
 ?>
                 <p>Some CSS rules are considered to be more specific than others.  When rules conflict with one another, CSS specificity determines what rules are applied to an element.  Generally, an id is more specific than a class, which is more specific than an element selector.  (id > class > element). </p>

@@ -2,11 +2,10 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', 1);
 
-	if(isset($_POST['uname']) && $_POST['uname']!=""){
-		// assuming they are tryting to submit
-		// die('Process the registration now!');
+	include "../groupdbconn.php";
+	$registered = 0;
 
-		include "../../../MAIN/ma3655/dbconn.php";
+	if(isset($_POST['uname']) && $_POST['uname']!=""){
 
 		if($mysqli){
 			$stmp = $mysqli->prepare("INSERT INTO `groupProject` (`uname`, `pass`) VALUES (?, ?)");
@@ -15,9 +14,7 @@
 			$stmp->bind_param("ss",$_POST['uname'],$hashedPassword);
 			$stmp->execute();
 			$stmp->close();
-			die("User registered!");
-			sleep(4);
-			header('Location: index.php');
+			$registered += 1;
 		}
 	}
 
@@ -37,6 +34,17 @@
 	<title>Register</title>
 	<link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
  	<style type="text/css">
+	 	.headtitle{
+				color: orange;
+				font-size: 250%;
+				margin-top: 220px;
+			}
+		.everything{
+			width: 500px;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+		}
  		form div{
  			margin: 1em;
  		}
@@ -54,22 +62,29 @@
 </head>
 <body>
 	<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-		<div>
+		<h1 class="everything headtitle">Create Your Account</h1>
+		<div class="everything">
 			User Name:
 			<input type="text" name="uname" size="30" />
 		</div>
-		<div>
+		<div class="everything">
 			Password:
 			<input type="password" name="pass" size="30" />
 		</div>
-		<div>
+		<div class="everything">
 			Password (again):
 			<input type="password" name="pass2" size="30" />
 		</div>
-		<div class="clearfix">
-			<input type="reset" value="Reset Form" />
-			<input type="submit" value="Submit Form" />
-		</div>	
+		<div class="clearfix everything">
+			<input type="reset" value="Reset Fields" style="margin: 1.5em; padding: 0.5em"/>
+			<input type="submit" value="Create Account" style="margin: 1.5em; padding: 0.5em"/>
+		</div>
+		<?php
+			if($registered >= 1){
+				//echo "<h3 style='color:blue;'>Registration is Successful!</h3>";
+				header('Location: index.php');
+			}
+		?>
 	</form>
 </body>
 </html>

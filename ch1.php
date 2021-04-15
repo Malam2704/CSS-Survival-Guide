@@ -5,6 +5,7 @@
 <?php
     $pageName = "Chapter 1: How to Add CSS to HTML";
     $path = "./";
+    $chapNumString = "1";
     include $path . "assets/inc/header.php";
 ?>
                 <p>Before getting started with CSS, make sure you have the following:</p>
