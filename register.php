@@ -35,10 +35,10 @@
 	<link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
  	<style type="text/css">
 	 	.headtitle{
-				color: orange;
-				font-size: 250%;
-				margin-top: 220px;
-			}
+			color: orange;
+			font-size: 250%;
+			margin-top: 220px;
+		}
 		.everything{
 			width: 500px;
 			text-align: center;
@@ -58,6 +58,12 @@
  		.clearfix{
  			clear: both;
  		}
+		@media only screen and (max-width:600px){
+			.everything,.headtitle{
+				margin: 0;
+				width: 100%;
+			}
+		}
  	</style>
 </head>
 <body>
