@@ -5,8 +5,8 @@
 <?php
     $pageName = "Chapter 8: Position";
     $path = "./";
-    $chapNumString = "8";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>The position property specifies how an element will be displayed on a page.  Once the position property is set, the top, right, bottom, and left properties can then be used to adjust an element’s location.  The five position values – static, relative, absolute, fixed, and sticky – will be discussed with examples.</p>
 
@@ -44,7 +44,7 @@
                 <p>The float property takes an element out of its normal position and shifts it to the left or right until it reaches the edge of its containing box or another floated element.  Typically float is used to wrap text around images.  The default value for float is none, and left, right, or inherit (gets float value of its parent) can be specified.</p>
                 <p>For Example,</p>
                     <!-- insert example here -->
-                <p><span class="tip">Tip:</span> When floating a div, give it a width.  Otherwise, the div tries to take up 100% of the width and nothing can float around it.</p>
+                <p><b>Tip:</b> When floating a div, give it a width.  Otherwise, the div tries to take up 100% of the width and nothing can float around it.</p>
 
                 <h3>Clear</h3>
                 <p>The clear property determines whether an element must be moved below floating elements (cleared).  Typical values are:</p>
@@ -59,13 +59,13 @@
 
             </main>
 
-            <form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            </form>
-
-<?php
-    include $path . "assets/inc/footer.php";
-?>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

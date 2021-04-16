@@ -5,8 +5,8 @@
 <?php
     $pageName = "Chapter 4: Text Properties";
     $path = "./";
-    $chapNumString = "4";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>Beyond color, there are numerous characteristics about text that can be manipulated.</p>
 
@@ -15,7 +15,7 @@
                 <p>For Example,</p>
                     <!-- insert example here -->
                 
-                <p><span class="tip">Tip:</span> When specifying a font-family that is more than one word, use quotation marks (i.e. “Times New Roman”)</p>
+                <p><b>Tip:</b> When specifying a font-family that is more than one word, use quotation marks (i.e. “Times New Roman”)</p>
 
                 <h3>Font-Size</h3>
                 <p>Font size can be adjusted using the font-size property and there are several value types that can be specified:</p>
@@ -51,7 +51,7 @@
                 </table>
                 <p>Examples:</p>
                     <!-- insert examples here -->
-                <p><span class="tip">Tip:</span> Do NOT include a space between a value and its unit.  (i.e. 18px, not 18 px)</p>
+                <p><b>Tip:</b> Do NOT include a space between a value and its unit.  (i.e. 18px, not 18 px)</p>
 
                 <h3>Font Styles & Shorthand</h3>
                 <p>Text can be assigned a different style with the property font-style.  Examples of values are italic, normal, and oblique.</p>
@@ -87,13 +87,13 @@
 
             </main>
 
-            <form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            </form>
-
-<?php
-    include $path . "assets/inc/footer.php";
-?>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

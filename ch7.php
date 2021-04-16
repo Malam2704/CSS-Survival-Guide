@@ -5,8 +5,8 @@
 <?php
     $pageName = "Chapter 7: CSS Box Model";
     $path = "./";
-    $chapNumString = "7";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>It is important to understand the box model in order to design and layout a web page.  The box model simply means that every element on a web page is considered a box by the browser that consists of content, padding, border, and margin.</p>
                     <!-- insert BOX MODEL DIAGRAM here -->
@@ -53,13 +53,13 @@
 
             </main>
 
-            <form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            </form>
-
-<?php
-    include $path . "assets/inc/footer.php";
-?>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

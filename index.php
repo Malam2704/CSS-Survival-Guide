@@ -1,5 +1,5 @@
 <?php
-	session_name("danny");
+	//session_name("danny");
 	session_start();
 
 	$loginattempts = 0;
@@ -8,7 +8,7 @@
 	// check fi the passwords are the same:
 	if(isset($_POST['uname']) && $_POST['uname']!=""){
 		//die("Check to see if this person exists and matched: " . $_POST['uname']);
-
+		$Username = $_POST['uname'];
 		// Add the star between SELECT and FROM
 		$stmp = $mysqli->prepare("SELECT `pass` FROM `groupProject` WHERE `uname` = ? LIMIT 1");
 
@@ -69,7 +69,7 @@
 		</style>
 	</head>
 	<body>
-		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 			<h1 class="everything headtitle">The CSS Survival Guide</h1>
 			<div class="everything">
 				User Name:

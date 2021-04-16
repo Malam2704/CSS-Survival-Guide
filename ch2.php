@@ -5,8 +5,8 @@
 <?php
     $pageName = "Chapter 2: CSS Selectors";
     $path = "./";
-    $chapNumString = "2";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>How do you target the components of a web page that need to be styled?  CSS selectors!</p>
                 <p>A CSS selector is the first part of a CSS rule and tells the browser which HTML element(s) should be selected to receive the specified property values within the rule.</p>
@@ -62,13 +62,13 @@
 
             </main>
 
-            <form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            </form>
-
-<?php
-    include $path . "assets/inc/footer.php";
-?>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

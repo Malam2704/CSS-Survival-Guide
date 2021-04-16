@@ -26,7 +26,7 @@
                 <ul>
                     <!-- Songyuan's image logo will be dropped here -->
                     <li> <img src="asset" alt=""></li>
-                    <li ><a href="index.php">Home Page</a></li>
+                    <li ><a href="home.php">Home Page</a></li>
                     <li ><a href="ch1.php">Chapter 1: Adding CSS To HTML</a></li>
                     <li ><a href="ch2.php">Chapter 2: CSS Selectors</a></li>
                     <li ><a href="ch3.php">Chapter 3: CSS Properties</a></li>
@@ -40,5 +40,6 @@
                 </ul>
             </nav>
 
+            <div class="wrapper">
             <main>
                 <h2> <?php echo $pageName;?> </h2>

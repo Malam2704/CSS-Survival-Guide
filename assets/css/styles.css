@@ -1,92 +1,3 @@
-Blade
-#7357
-
-Mohammed Alam | CEX — Yesterday at 12:21 AM
-no, but it's on filezilla, he said it shouldn't be able to be found so I hid it in the non accessible directory of filezilla, if there are any problems I can handle it.
-Kelly A — Yesterday at 12:22 AM
-ok, just on my end for previewing if I do a server on my local machine I might not be able to connect to the database, but I can when I'm on VPN and on solace so if I need to test anything I might just have to make sure our latest version gets to solace
-and i forget if i posted that when I did some css I just picked a similar font off google fonts... the one we had on our stylesheet i think is an adobe font and I dk if it would be easy to get and universally able to be rendered for users
-we can play with sizing and line height and if we want to make the headings a different font or anything like that later
-Mohammed Alam | CEX — Yesterday at 12:28 AM
-np
-Peter S — Yesterday at 2:28 PM
-what password is for the group account
-I'm not sure if i can see the changes I make locally with php files
-Mohammed Alam | CEX — Yesterday at 3:02 PM
-It's in the group filezilla
-It's called groupdbconn
-Peter S — Yesterday at 3:03 PM
-how do i access the group filezilla tho cause I cant log into i
-it
-Mohammed Alam | CEX — Yesterday at 3:06 PM
-You have to go back from your solace until you see iste240t60
-Peter S — Yesterday at 3:06 PM
-in MAIN?
-wait nvm i found it
-ty
-Peter S — Yesterday at 3:18 PM
-still having problems. I open the php files and it just shows all the code in the browser
-Mohammed Alam | CEX — Yesterday at 3:18 PM
-Right click open withcode?
-Drag into your computer
-And click opening code
-Peter S — Yesterday at 3:20 PM
-idk where those options are
-is it supposed to be github, filezilla, or windows?
-
-I just get this whenever I try to open php files anywhere except through solace
-Mohammed Alam | CEX — Yesterday at 3:31 PM
-Yeah thats what you're supposed to get
-It's the groupdbconn.php
-Same directory as our project
-Peter S — Yesterday at 3:33 PM
-what am i supposed to do with the groupdbconn? Ik it connects to the group database but what does it have to do with the way I'm supposed to edit the files
-I can't see the changes I make without making changes directly to the solace files but then what would I use github for
-sorry I'm mad confused
-Mohammed Alam | CEX — Yesterday at 4:21 PM
-Github like manages the whole thing
-Tells us who did what
-And github , ifk if it has sql so I gotta work with that
-I mean aslong as you can do the css you're good
-Since they're all php files can't use live server
-Kelly A — Yesterday at 11:46 PM
-i've been using github and visualstudio and then doing live previews using xampp and localhost... it's all been great until the database stuff... doesn't seem like i can properly connect without going through solace.  so I can edit and access everything off solace unless it's db related.  so I guess if anyone does work that doesn't get updated on github, just let us know on here so we can check solace and grab any files from there first so we make sure we are using the up to date versions
-Mohammed Alam | CEX — Yesterday at 11:47 PM
-I mean I've been using Filezilla shortcuts
-It's been working well so far, ciuldve be better like the vocoder live server extension, but eh
-Kelly A — Yesterday at 11:48 PM
-yeah, just make sure that if something gets updated its in github and solace or if only one gets updated just post which one
-Mohammed Alam | CEX — Yesterday at 11:52 PM
-What I do is just do git status to check which files have been changed and upload then to solace
-I think the site looks good as of now, just the comment section needs to be prettier.
-And I need to talk with the professor to find a way to input username as a variable
-Kelly A — Yesterday at 11:53 PM
-ok cool
-Peter S — Today at 1:47 PM
-Hey i made some changes to the colors to match the stylesheet and wireframes. I'm actually awful with github and have no idea how to work it so I'm just going to put it here.
-/*  Group 6: ["Hip", "Hip"]
-    Spring 2021
-    ISTE240 Group Project
-    Stylesheet: CSS Survival Guide */
-
-* {
-Expand
-styles.css
-3 KB
-Kelly A — Today at 2:33 PM
-ok cool... Mohammed can probably update the files
-Mohammed Alam | CEX — Today at 2:34 PM
-Np
-Kelly A — Today at 2:35 PM
-is the plan to meet at 4 today?
-Mohammed Alam | CEX — Today at 2:52 PM
-Yes
-We just need to revise it a bit
-Kelly A — Today at 2:53 PM
-sounds good.  Once you update the file with Peter's code let me know and I'll pull the latest version
-Mohammed Alam | CEX — Today at 2:53 PM
-Np
-﻿
 /*  Group 6: ["Hip", "Hip"]
     Spring 2021
     ISTE240 Group Project
@@ -99,8 +10,12 @@ Np
 
 body {
   background-color: #24243C;
-  color: #999999;
+  color:rgb(255, 111, 59);
   font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 /* Table */
@@ -154,7 +69,7 @@ h1, h2, h3, h4 {
 }
 
 h2, h3 {
-  max-width: 1000px;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -168,12 +83,12 @@ h2 + h3 {
 
 p {
   margin: 20px;
-  max-width: 1000px;
+  max-width: 100%;
   text-indent: 20px;
 }
 
 .indent {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0px auto;
 }
 
@@ -187,7 +102,7 @@ footer {
   text-align: center;
   font-size: 0.8em;
   margin: 10px;
-  max-width: 1000px;
+  max-width: 100%;
 }
 
 /* Lists */
@@ -218,3 +133,4 @@ ul li:not(nav li){
         padding: .25em;
     }
 }
+

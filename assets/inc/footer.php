@@ -1,3 +1,4 @@
 <footer>
-    &copy; ["Hip", "Hip"] Spring 2021
+        &copy; ["Hip", "Hip"] Spring 2021
+    </div>
 </footer>

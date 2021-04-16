@@ -5,8 +5,8 @@
 <?php
     $pageName = "Chapter 5: CSS Layout";
     $path = "./";
-    $chapNumString = "5";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
         
                 <p>Elements on web pages are laid out according to normal flow unless otherwise specified.  Normal flow is the manner in which elements are displayed on a page before any adjustments are made to their layout. </p>
@@ -18,13 +18,13 @@
 
             </main>
 
-            <form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            </form>
-
-<?php
-    include $path . "assets/inc/footer.php";
-?>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>
