@@ -14,7 +14,9 @@
         <link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+        <!-- load favicon image in browser tab-->
+        <link rel="icon" href="assets/images/favicon2.png"> 
     </head>
     <body>
         <div>
