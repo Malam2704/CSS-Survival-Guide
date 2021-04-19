@@ -69,7 +69,7 @@
 		</style>
 	</head>
 	<body>
-		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 			<h1 class="everything headtitle">The CSS Survival Guide</h1>
 			<div class="everything">
 				User Name:

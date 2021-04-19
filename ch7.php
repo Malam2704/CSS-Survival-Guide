@@ -53,6 +53,8 @@
 
             </main>
 
+            <div><a href="QuizFormCh7.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
+
             <?php
                 include "assets/inc/commentSection.php";
             ?>

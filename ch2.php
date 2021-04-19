@@ -59,8 +59,9 @@
                     <li>Can be followed by: letters (A-Za-z), digits (0-9), hyphens ("-"), and underscores ("_")</li>
                     <li>camelCase: not mandatory, but instead of using hyphens or underscores for combining words, the first letter of each word is capitalized, except for the first word</li>
                 </ul>
-
             </main>
+
+            <div><a href="QuizFormCh2.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
 
             <?php
                 include "assets/inc/commentSection.php";

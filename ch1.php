@@ -49,6 +49,8 @@
                 <p>External CSS is ideal when styles need to be applied to multiple web pages and can help maintain uniformity among those web pages.  The main benefit is that the look of an entire website can be altered by changing a single file.</p>
             </main>
 
+            <div><a href="QuizFormCh1.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
+
             <?php
                 include "assets/inc/commentSection.php";
             ?>
