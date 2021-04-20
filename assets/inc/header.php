@@ -1,3 +1,7 @@
+<?php
+    session_name("sIndex");
+    session_start();
+?>
 <!-- <header>
     <h1>echo $pagename</h1>
      logo goes below here
@@ -19,16 +23,17 @@
         <link rel="icon" href="assets/images/favicon2.png"> 
     </head>
     <body>
+        <!-- Header logo and site name -->        
+        <header class="hero-header">
+            <img class="hero-img" src="assets/images/logo_teamName.png" alt="hippo logo with team name Hip Hip Array">
+                <h1 class="hero-text">CSS Survival Guide</h1>
+        </header>
         <div>
-            <header>
-
-            </header>
-
             <nav>
                 <ul>
-                    <!-- Songyuan's image logo will be dropped here -->
-                    <li> <img src="asset" alt=""></li>
-                    <li ><a href="home.php">Home Page</a></li>
+                    <li ><a href="home.php">Home&nbsp;Page</a>
+                    <img class="nav-icon" src="assets/images/favicon2.png" alt="hippo icon with closed mouth">
+                    </li>
                     <li ><a href="ch1.php">Chapter 1: Adding CSS To HTML</a></li>
                     <li ><a href="ch2.php">Chapter 2: CSS Selectors</a></li>
                     <li ><a href="ch3.php">Chapter 3: CSS Properties</a></li>
@@ -41,6 +46,7 @@
                     <li ><a href="ch10.php">Chapter 10: Order and Specificity</a></li>
                 </ul>
             </nav>
+            
 
             <div class="wrapper">
             <main>

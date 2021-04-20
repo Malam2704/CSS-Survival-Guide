@@ -30,8 +30,7 @@
 				}
 			}
 			echo $theirMail;
-			pass
-            $messageStart = " Your User name and password is " . $records[0];
+			$messageStart = " Your User name and password is " . $records[0];
 			echo $messageStart;
             mail($theirMail, "CSS Survival Guide Login Info", $messageStart);
 		}

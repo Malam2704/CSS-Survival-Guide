@@ -18,6 +18,27 @@ body {
   margin-left: 15%;
 }
 
+/* Header Logo and Site Name */
+.hero-header {
+    background-color: #E6E6E6;
+    border: 5px solid #FF5700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 13%;
+    padding: 5px;
+}
+
+.hero-text {
+    color: #FF5700;
+    font-size: 2em;
+    text-shadow: 1px 1px #24243C;
+    padding-left: 20px;
+}
+
 /* Table */
 table {
   border-collapse: collapse;
@@ -36,6 +57,11 @@ tr:nth-child(even) {
 }
 
 /* Navigation */
+.nav-icon {
+    width: 40%;
+    max-width: 50px;
+}
+
 nav{
   padding-top: 1.5em;
   padding-bottom: 1.5em;

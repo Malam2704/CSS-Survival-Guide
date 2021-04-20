@@ -1,7 +1,6 @@
 <?php
-	session_name("danny");
-	session_start();
-
+    session_name("sIndex");
+    session_start();
 	$loginattempts = 0;
 	include "../groupdbconn.php";
 
@@ -20,6 +19,7 @@
 
 		if(password_verify($_POST['pass'], $res)){
 			$_SESSION['login']=true;
+			$_SESSION['pass']=$_POST['pass'];
 			$_SESSION['name']=$_POST['uname'];
 			header('Location: home.php');
 		}else{
@@ -69,7 +69,7 @@
 		</style>
 	</head>
 	<body>
-		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 			<h1 class="everything headtitle">The CSS Survival Guide</h1>
 			<div class="everything">
 				User Name:
@@ -81,6 +81,7 @@
 			</div>
 			<div class="clearfix everything">
 				<input type="reset" value="Reset Form" style="margin: 1.5em; padding: 0.5em"/>
+				<input type="button" value="Forgot Password" style="margin: 1.5em; padding: 0.5em" onclick="window.location='forgot.php'" />
 				<input type="submit" value="Enter Site" style="margin: 1.5em; padding: 0.5em"/>
 				<input type="button" value="Register" style="margin: 1.5em; padding: 0.5em" onclick="window.location='register.php'" />
 			</div>

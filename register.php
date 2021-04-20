@@ -8,10 +8,10 @@
 	if(isset($_POST['uname']) && $_POST['uname']!=""){
 
 		if($mysqli){
-			$stmp = $mysqli->prepare("INSERT INTO `groupProject` (`uname`, `pass`) VALUES (?, ?)");
+			$stmp = $mysqli->prepare("INSERT INTO `groupProject` (`uname`,`email`, `pass`) VALUES (?, ?, ?)");
 			$hashedPassword = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-			$stmp->bind_param("ss",$_POST['uname'],$hashedPassword);
+			$stmp->bind_param("sss",$_POST['uname'],$_POST['email'],$hashedPassword);
 			$stmp->execute();
 			$stmp->close();
 			$registered += 1;
@@ -72,6 +72,10 @@
 		<div class="everything">
 			User Name:
 			<input type="text" name="uname" size="30" />
+		</div>
+		<div class="everything">
+			Email: 
+			<input type="email" name="email" size="30" />
 		</div>
 		<div class="everything">
 			Password:
