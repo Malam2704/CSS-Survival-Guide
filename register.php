@@ -41,7 +41,6 @@
 		}
 		[type="button"],[type="reset"],[type="submit"] {
 			background-color: #23222c;
-			border: none;
 			color: white;
 			padding: 15px 32px;
 			text-align: center;

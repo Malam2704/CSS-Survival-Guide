@@ -41,7 +41,6 @@
 			}
 			[type="button"],[type="reset"],[type="submit"] {
 				background-color: #23222c;
-				border: none;
 				color: white;
 				padding: 15px 32px;
 				text-align: center;
@@ -55,7 +54,7 @@
 			.headtitle{
 				color: orange;
 				font-size: 250%;
-				margin-top: 220px;
+				margin-top: 250px;
 			}
 			.everything{
 				width: 500px;
@@ -74,6 +73,7 @@
 				float: left;
 			}
 			.clearfix {
+				color: #8dc8ee;
 				clear: both;
 			}
 			@media only screen and (max-width:600px){
@@ -86,7 +86,7 @@
 	</head>
 	<body>
 		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-			<h1 class="everything headtitle">The CSS Survival Guide</h1>
+			<h1 class="everything headtitle" style ="color: #84a901; font-weight: 700">The CSS Survival Guide</h1>
 			<div class="everything">
 				User Name:
 				<input type="text" name="uname" size="30" />
