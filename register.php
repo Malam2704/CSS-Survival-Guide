@@ -2,7 +2,7 @@
 	error_reporting(E_ALL);
 	ini_set('display_errors', 1);
 
-	include "../groupdbconn.php";
+	include "groupdbconn.php";
 	$registered = 0;
 
 	if(isset($_POST['uname']) && $_POST['uname']!=""){
@@ -10,7 +10,9 @@
 		if($mysqli){
 			$stmp = $mysqli->prepare("INSERT INTO `groupProject` (`uname`,`email`, `pass`) VALUES (?, ?, ?)");
 			$hashedPassword = password_hash($_POST['pass'], PASSWORD_DEFAULT);
-
+			$uMail = $_POST['email'];
+			$eMessage = "Hello, you have made an account with user " . $_POST['uname'] . " and with a password of " . $_POST['pass'];
+			mail($uMail,"CSS Survival Guide Account Created",$eMessage);
 			$stmp->bind_param("sss",$_POST['uname'],$_POST['email'],$hashedPassword);
 			$stmp->execute();
 			$stmp->close();
@@ -34,6 +36,22 @@
 	<title>Register</title>
 	<link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
  	<style type="text/css">
+	 	body{
+			background-image: url("assets/images/login_background.jpg");
+		}
+		[type="button"],[type="reset"],[type="submit"] {
+			background-color: #23222c;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border: 2px solid white;
+		}
 	 	.headtitle{
 			color: orange;
 			font-size: 250%;

@@ -3,7 +3,7 @@
 		// session_start();
         error_reporting(E_ALL);
 	    ini_set('display_errors', 1);
-        include "../groupdbconn.php";
+        include "groupdbconn.php";
 		//if we have a connection 
 		if($mysqli){
 			// if we are adding a new user

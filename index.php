@@ -2,7 +2,7 @@
     session_name("sIndex");
     session_start();
 	$loginattempts = 0;
-	include "../groupdbconn.php";
+	include "groupdbconn.php";
 
 	// check fi the passwords are the same:
 	if(isset($_POST['uname']) && $_POST['uname']!=""){
@@ -36,6 +36,22 @@
 		<title>Login</title>
 		<link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
 		<style type="text/css">
+			body{
+				background-image: url("assets/images/login_background.jpg");
+			}
+			[type="button"],[type="reset"],[type="submit"] {
+				background-color: #23222c;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+				border: 2px solid white;
+			}
 			.headtitle{
 				color: orange;
 				font-size: 250%;
@@ -80,7 +96,7 @@
 				<input type="password" name="pass" size="30" />
 			</div>
 			<div class="clearfix everything">
-				<input type="reset" value="Reset Form" style="margin: 1.5em; padding: 0.5em"/>
+				<input type="reset" value="Reset Fields" style="margin: 1.5em; padding: 0.5em"/>
 				<input type="button" value="Forgot Password" style="margin: 1.5em; padding: 0.5em" onclick="window.location='forgot.php'" />
 				<input type="submit" value="Enter Site" style="margin: 1.5em; padding: 0.5em"/>
 				<input type="button" value="Register" style="margin: 1.5em; padding: 0.5em" onclick="window.location='register.php'" />

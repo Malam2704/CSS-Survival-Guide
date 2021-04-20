@@ -11,10 +11,10 @@
                 $NAME = "";
             }
         ?>
-        <div style="margin-left: 1.5em; margin-right: 1.5em;">User name: <input type="text" id="first" name="name" value="<?php echo $NAME; ?>"/></div>
+        <div style="margin-left: 1.5em; margin-right: 1.5em; margin-top: 1.5em">User name: <input type="text" id="first" name="name" value="<?php echo $NAME; ?>"/></div>
         <br>
         <div style="margin-left: 1.5em; margin-right: 1.5em;">Comment: <textarea name="com" id="comment" style="width: 100%;" rows="10" placeholder="Please leave any comments or questions here.  We'd love to hear what you like about our site, how we can improve, what topics you'd like to learn about, and answer any questions you may have on the content we've presented."></textarea></div>
-        <input type="submit" value="Add to the List" style="padding: 1em; margin-left: auto; margin-right: auto; width:10em"/>
+        <input type="submit" value="Add to the List" style="margin: 1.5em;"/>
     </form>
 
     <div class="commentSection">
@@ -22,7 +22,7 @@
         <?php
             foreach($records as $this_row){
                 //echo $this_row;
-                echo '<li> Username:' . $this_row['uname'] . "<br> Comment: " . $this_row['comment'] . "<br> Last Modified: " . $this_row['last_modified'] . '</li><br><br>';
+                echo '<li style="list-style-type: none; "> Username:' . $this_row['uname'] . "<br> Comment: " . $this_row['comment'] . "<br> Last Modified: " . $this_row['last_modified'] . '</li><br><br>';
             }
         ?>
         </ul>

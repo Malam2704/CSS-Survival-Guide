@@ -47,7 +47,7 @@ table {
 }
 
 td, th {
-  border: 1px solid #E6E6E6;
+  border: 5px solid #E6E6E6;
   text-align: left;
   padding: 8px;
 }
@@ -78,7 +78,7 @@ nav ul{
 }
 nav li{
   width: 100%;
-  border: 0.05em solid #C4C4C4;
+  border: 5px solid #C4C4C4;
 }
 nav li a{
   text-decoration: none;
@@ -96,7 +96,7 @@ h1, h2, h3, h4 {
 
 h2, h3 {
   max-width: 100%;
-  text-align: center;
+  text-decoration: underline;
 }
 
 h4 {

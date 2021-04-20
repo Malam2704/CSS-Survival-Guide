@@ -50,4 +50,4 @@
 
             <div class="wrapper">
             <main>
-                <h2> <?php echo $pageName;?> </h2>
+                <h2 style="font-size: 250%; margin-top: 3em; margin-bottom: 1.75em; text-decoration:underline; text-align:center"> <?php echo $pageName;?> </h2>
