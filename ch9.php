@@ -6,6 +6,7 @@
     $pageName = "Chapter 9: Pseudo-Classes";
     $path = "./";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>A pseudo-class can be used to specify a particular state of an element.  The generic format of pseudo-classes is:</p>
                 <p>
@@ -25,13 +26,15 @@
 
             </main>
 
-            <form>
+            <div><a href="QuizFormCh9.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
 
-            </form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            <footer>
-
-            </footer>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

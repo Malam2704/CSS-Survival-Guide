@@ -6,6 +6,7 @@
     $pageName = "Chapter 2: CSS Selectors";
     $path = "./";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>How do you target the components of a web page that need to be styled?  CSS selectors!</p>
                 <p>A CSS selector is the first part of a CSS rule and tells the browser which HTML element(s) should be selected to receive the specified property values within the rule.</p>
@@ -58,16 +59,17 @@
                     <li>Can be followed by: letters (A-Za-z), digits (0-9), hyphens ("-"), and underscores ("_")</li>
                     <li>camelCase: not mandatory, but instead of using hyphens or underscores for combining words, the first letter of each word is capitalized, except for the first word</li>
                 </ul>
-
             </main>
 
-            <form>
+            <div><a href="QuizFormCh2.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
 
-            </form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            <footer>
-
-            </footer>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

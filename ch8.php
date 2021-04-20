@@ -6,6 +6,7 @@
     $pageName = "Chapter 8: Position";
     $path = "./";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>The position property specifies how an element will be displayed on a page.  Once the position property is set, the top, right, bottom, and left properties can then be used to adjust an element’s location.  The five position values – static, relative, absolute, fixed, and sticky – will be discussed with examples.</p>
 
@@ -58,13 +59,15 @@
 
             </main>
 
-            <form>
+            <div><a href="QuizFormCh8.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
 
-            </form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            <footer>
-
-            </footer>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

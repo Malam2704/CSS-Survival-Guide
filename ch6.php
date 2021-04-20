@@ -6,6 +6,7 @@
     $pageName = "Chapter 6: Width, Height, Overflow";
     $path = "./";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <h3>Width</h3>
                 <p>The width property controls the width of an element.   By default, a &lt;div&gt; element takes up 100% width of a page unless a specific width is specified.  Several other elements can have their width adjusted such as paragraphs, images, input fields, etc.  It is important to note that padding, borders, and margins are NOT included in the width of an element.  These properties will be discussed in the next chapter.</p>
@@ -36,13 +37,15 @@
                 
             </main>
 
-            <form>
+            <div><a href="QuizFormCh6.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
 
-            </form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            <footer>
-
-            </footer>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

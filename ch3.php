@@ -6,6 +6,7 @@
     $pageName = "Chapter 3: CSS Properties";
     $path = "./";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>CSS properties tell the browser how to style a selected element.  There are hundreds of properties that can be modified and some of the most fundamental will be addressed.</p>
 
@@ -22,13 +23,15 @@
 
             </main>
 
-            <form>
+            <div><a href="QuizFormCh3.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
 
-            </form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            <footer>
-
-            </footer>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

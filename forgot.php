@@ -5,18 +5,34 @@
 	include "groupdbconn.php";
 	$registered = 0;
 
-	if(isset($_POST['uname']) && $_POST['uname']!=""){
+	if(isset($_POST['email']) && $_POST['email']!=""){
 
 		if($mysqli){
-			$stmp = $mysqli->prepare("INSERT INTO `groupProject` (`uname`,`email`, `pass`) VALUES (?, ?, ?)");
-			$hashedPassword = password_hash($_POST['pass'], PASSWORD_DEFAULT);
-			$uMail = $_POST['email'];
-			$eMessage = "Hello, you have made an account with user " . $_POST['uname'] . " and with a password of " . $_POST['pass'];
-			mail($uMail,"CSS Survival Guide Account Created",$eMessage);
-			$stmp->bind_param("sss",$_POST['uname'],$_POST['email'],$hashedPassword);
-			$stmp->execute();
-			$stmp->close();
-			$registered += 1;
+			// $stmp = $mysqli->prepare("INSERT INTO `groupProject` (`uname`, `pass`) VALUES (?, ?)");
+			// $hashedPassword = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+
+			// $stmp->bind_param("ss",$_POST['uname'],$hashedPassword);
+			// $stmp->execute();
+			// $stmp->close();
+			// $registered += 1;
+
+			$theirMail = $_POST['email'];
+            $sql = "SELECT * FROM `groupProject` WHERE `email` = $theirMail";
+			// var_dump($result);
+			// $row = $result->fetch_assoc();
+			//$res = $result->fetch_assoc();
+			if($result = $mysqli->query($sql)){
+				printf("select returned %d rows<br/><br/>",$results->num_rows);
+				// put the first and last elements of the 240Inserttable into 
+				// a php array.
+				while($rowHolder = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+					$records[] = $rowHolder;
+				}
+			}
+			echo $theirMail;
+			$messageStart = " Your User name and password is " . $records[0];
+			echo $messageStart;
+            mail($theirMail, "CSS Survival Guide Login Info", $messageStart);
 		}
 	}
 
@@ -88,24 +104,12 @@
 	<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 		<h1 class="everything headtitle">Create Your Account</h1>
 		<div class="everything">
-			User Name:
-			<input type="text" name="uname" size="30" />
-		</div>
-		<div class="everything">
 			Email: 
 			<input type="email" name="email" size="30" />
 		</div>
-		<div class="everything">
-			Password:
-			<input type="password" name="pass" size="30" />
-		</div>
-		<div class="everything">
-			Password (again):
-			<input type="password" name="pass2" size="30" />
-		</div>
 		<div class="clearfix everything">
 			<input type="reset" value="Reset Fields" style="margin: 1.5em; padding: 0.5em"/>
-			<input type="submit" value="Create Account" style="margin: 1.5em; padding: 0.5em"/>
+			<input type="submit" value="Send Email" style="margin: 1.5em; padding: 0.5em"/>
 		</div>
 		<?php
 			if($registered >= 1){

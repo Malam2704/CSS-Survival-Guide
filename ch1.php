@@ -6,6 +6,7 @@
     $pageName = "Chapter 1: How to Add CSS to HTML";
     $path = "./";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>Before getting started with CSS, make sure you have the following:</p>
                     <ul>
@@ -46,16 +47,18 @@
                 <p>&lt;/head&gt;</p>
                 <p>where rel specifies the relationship between the current HTML document and the linked CSS document and href provides the location of the linked document using an absolute or relative URL.</p>
                 <p>External CSS is ideal when styles need to be applied to multiple web pages and can help maintain uniformity among those web pages.  The main benefit is that the look of an entire website can be altered by changing a single file.</p>
-
             </main>
 
-            <form>
+            <div><a href="QuizFormCh1.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
 
-            </form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            <footer>
-
-            </footer>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
+            
         </div>
     </body>
 </html>

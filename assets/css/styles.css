@@ -3,24 +3,51 @@
     ISTE240 Group Project
     Stylesheet: CSS Survival Guide */
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
   background-color: #24243C;
-  color: #E6E6E6;
+  color:rgb(255, 111, 59);
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
-/* table */
+/* Header Logo and Site Name */
+.hero-header {
+    background-color: #E6E6E6;
+    border: 5px solid #FF5700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 13%;
+    padding: 5px;
+}
+
+.hero-text {
+    color: #FF5700;
+    font-size: 2em;
+    text-shadow: 1px 1px #24243C;
+    padding-left: 20px;
+}
+
+/* Table */
 table {
   border-collapse: collapse;
-  width: 100%;
+  margin-left:auto; 
+  margin-right:auto;
 }
 
 td, th {
-  border: 1px solid #E6E6E6;
+  border: 5px solid #E6E6E6;
   text-align: left;
   padding: 8px;
 }
@@ -29,10 +56,16 @@ tr:nth-child(even) {
   background-color: #396BF7;
 }
 
+/* Navigation */
+.nav-icon {
+    width: 40%;
+    max-width: 50px;
+}
+
 nav{
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom: 0.5em solid #005C61;
+  border-bottom: 0.5em solid #C4C4C4;
   margin-bottom: 2em;
 }
 nav ul{
@@ -45,16 +78,74 @@ nav ul{
 }
 nav li{
   width: 100%;
-  border: 0.15em solid orangered;
+  border: 5px solid #C4C4C4;
 }
 nav li a{
   text-decoration: none;
 }
 
-a:link{color: orangered}
-a:visited{color: orange}
-nav li:hover,a:hover{color: blue; border-color: orangered;}
-a:active{color: silver;}
+a:link{color: #FF5700}
+a:visited{color: #999999}
+nav li:hover,a:hover{color: #FFb300; border-color: orangered;}
+a:active{color: #396BF7;}
+
+/* Page Layout & Style */
+h1, h2, h3, h4 {
+  color: #E6E6E6;
+}
+
+h2, h3 {
+  max-width: 100%;
+  text-decoration: underline;
+}
+
+h4 {
+  margin-left: 40px;
+}
+
+h2 + h3 {
+  margin-top: 20px;
+}
+
+p {
+  margin: 20px;
+  max-width: 100%;
+  text-indent: 20px;
+}
+
+.indent {
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+.tip {
+  color:orangered;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 10px;
+  max-width: 100%;
+}
+
+/* Lists */
+ol, ul:not(nav ol, ul) {
+  padding: 10px;
+}
+
+ol li, ul li:not(nav li){
+  padding: 5px;
+  margin-left: 60px;
+}
+
+ul li:not(nav li){
+  padding: 5px;
+  margin-left: 70px;
+  list-style-type: square;
+}
 
 @media only screen and (max-width:1000px){
     nav ul{
@@ -64,8 +155,53 @@ a:active{color: silver;}
     nav ul li{
         width: 70%;
         margin: .25em;
-        border: 0.2em solid orangered;
+        border: 0.05em solid #C4C4C4;
         padding: .25em;
     }
+}
+
+/* Side Bar Nav Section */
+/* ___________________________________________________ */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: orangered;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #24243C;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 

@@ -6,6 +6,7 @@
     $pageName = "Chapter 7: CSS Box Model";
     $path = "./";
     include $path . "assets/inc/header.php";
+    include "assets/inc/gettingComments.php";
 ?>
                 <p>It is important to understand the box model in order to design and layout a web page.  The box model simply means that every element on a web page is considered a box by the browser that consists of content, padding, border, and margin.</p>
                     <!-- insert BOX MODEL DIAGRAM here -->
@@ -52,13 +53,15 @@
 
             </main>
 
-            <form>
+            <div><a href="QuizFormCh7.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
 
-            </form>
+            <?php
+                include "assets/inc/commentSection.php";
+            ?>
 
-            <footer>
-
-            </footer>
+            <?php
+                include $path . "assets/inc/footer.php";
+            ?>
         </div>
     </body>
 </html>

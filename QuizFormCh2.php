@@ -3,7 +3,7 @@
 <!-- ISTE240 Group Project -->
 <!-- Chapter 1: How to Add CSS to HTML -->
 <?php
-$pageName = "Chapter 2 Quiz";
+    $pageName = "Chapter 2 Quiz";
     $path = "./";
     include $path . "assets/inc/header.php";
 ?>
