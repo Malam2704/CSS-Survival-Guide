@@ -22,7 +22,7 @@
         <?php
             foreach($records as $this_row){
                 //echo $this_row;
-                echo '<li style="list-style-type: none; "> Username:' . $this_row['uname'] . "<br> Comment: " . $this_row['comment'] . "<br> Last Modified: " . $this_row['last_modified'] . '</li><br><br>';
+                echo '<li style="list-style-type: none; "> Username:' . $this_row['uname'] . "<br> Comment: " . $this_row['comment'] . "<br> Date Posted: " . $this_row['last_modified'] . '</li><br><br>';
             }
         ?>
         </ul>

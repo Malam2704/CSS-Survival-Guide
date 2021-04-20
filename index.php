@@ -35,61 +35,11 @@
 		<meta charset="utf-8" />
 		<title>Login</title>
 		<link href="assets/css/styles.css" rel="stylesheet" type="text/CSS">
-		<style type="text/css">
-			body{
-				background-image: url("assets/images/login_background.jpg");
-			}
-			[type="button"],[type="reset"],[type="submit"] {
-				background-color: #23222c;
-				color: white;
-				padding: 15px 32px;
-				text-align: center;
-				text-decoration: none;
-				display: inline-block;
-				font-size: 16px;
-				margin: 4px 2px;
-				cursor: pointer;
-				border: 2px solid white;
-			}
-			input:hover{
-				color: #8dc8ee;
-			}
-			.headtitle{
-				color: orange;
-				font-size: 250%;
-				margin-top: 250px;
-			}
-			.everything{
-				width: 500px;
-				text-align: center;
-				margin-right: auto;
-				margin-left: auto;
-			}
-			form div,form h1,form h3{
-				margin: 1em;
-			}
-			form div label{
-				float: left;
-				width: 10%;
-			}
-			form div.radio {
-				float: left;
-			}
-			.clearfix {
-				color: #8dc8ee;
-				clear: both;
-			}
-			@media only screen and (max-width:600px){
-			.everything,.headtitle{
-				margin: 0;
-				width: 100%;
-			}
-		}
-		</style>
+		<link href="assets/css/intro.css" rel="stylesheet" type="text/CSS">
 	</head>
 	<body>
 		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-			<h1 class="everything headtitle" style ="color: #84a901; font-weight: 700">The CSS Survival Guide</h1>
+			<h1 class="everything headtitle" style ="color:#FF5700; font-weight: 700;">The CSS Survival Guide</h1>
 			<div class="everything">
 				User Name:
 				<input type="text" name="uname" size="30" />

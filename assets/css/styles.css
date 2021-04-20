@@ -147,6 +147,25 @@ ul li:not(nav li){
   list-style-type: square;
 }
 
+[type="button"],[type="reset"],[type="submit"] {
+  background-color: #23222c;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid white;
+  text-align: center;
+}
+[type="button"]:hover,[type="reset"]:hover,[type="submit"]:hover{
+    border: 5px solid #FF5700;
+    color: #FF5700;
+    padding: 3em;
+}
+
 @media only screen and (max-width:1000px){
     nav ul{
         flex-direction: column;
