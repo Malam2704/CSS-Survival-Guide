@@ -25,17 +25,20 @@
                 <p>Inline CSS is used to style a single HTML element using the style attribute.  The basic structure appears as:</p>
                 <p>&lt;tagName style="propertyName: value;"&gt;</p>
                 <p>For example,</p>
-                    <!-- insert example here -->
+                    <img class="demo" src="assets/images/1-heading.png" alt="Example of Inline CSS"/>
+                    <img class="demo" src="assets/images/2-heading.png" alt="Result of above example showing a blue heading"/>
                 <p>would make that single h1 heading the color blue.</p>
                 <p>Multiple properties can be modified within a single style attribute.</p>
                 <p>For example,</p>
-                    <!-- insert example here -->
+                    <img class="demo" src="assets/images/3-paragraphColor.png" alt="Example of styling multiple properties within a single style attribute"/>
+                    <img class="demo" src="assets/images/4-paragraphColor" alt="Result of above example showing a paragraph with 24 pixel font colored red with a yellow background"/>
                 <p>Generally, using inline CSS should be avoided, as it can muddy HTML code and can create issues relating to maintainability and accessibility.  It can be helpful, however, to quickly insert CSS rules for testing and previewing purposes.</p>
 
                 <h3>Internal</h3>
                 <p>Internal CSS is inserted using the style tag within the head section of an HTML page.  Multiple style rules can be included within the style tag to control page properties.</p>
                 <p>For example,</p>
-                    <!-- insert example here -->
+                    <img class="demo" src="assets/images/5-backgroundColor.png" alt="Example of Internal CSS"/>
+                    <img class="demo" src="assets/images/6-backgroundColor.png" alt="Result of above example showing white font on a purple background"/>
                 <p>The entire web page (using the body element) will have a background color of purple, and all paragraphs on the page (using p, the paragraph element) will be colored white and use Arial font or  the default sans-serif font of the browser if Arial is not available.</p>
                 <p>In general, a selector decides what part of the page to style.  The selectors in the above example select elements based on tag names, but notice that the angle brackets <...> are NOT included.  Also note the curly braces which contain the property being styled followed by a colon, the property value, then a semicolon.</p>
                 <p>Internal CSS can be used if a single web page needs to be styled, but it is often better practice to use External CSS if multiple pages need to be styled.  (Examples on this website will utilize internal CSS).</p>
@@ -49,7 +52,9 @@
                 <p>External CSS is ideal when styles need to be applied to multiple web pages and can help maintain uniformity among those web pages.  The main benefit is that the look of an entire website can be altered by changing a single file.</p>
             </main>
 
-            <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge"/>
+            <div class="centering">
+                <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh1.php'"/>
+            </div>
 
             <?php
                 include "assets/inc/commentSection.php";

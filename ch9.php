@@ -23,10 +23,14 @@
                     </ul>
                 <p>For Example,</p>
                     <!-- insert example here -->
-
+                    <img class="demo" src="assets/images/40a-pseudoClass.png" alt="Example of Pseudo Class HTML"/>
+                    <img class="demo" src="assets/images/40b-pseudoClass.png" alt="Example of Pseudo Class CSS"/>
+                    <img class="demo" src="assets/images/40c-pseudoClass.png" alt="Example of Pseudo Class Result"/>
             </main>
 
-            <div><a href="QuizFormCh9.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
+            <div class="centering">
+                <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh9.php'"/>
+            </div>
 
             <?php
                 include "assets/inc/commentSection.php";

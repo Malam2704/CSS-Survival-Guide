@@ -15,6 +15,8 @@
                 <p><b>Tip:</b> Only specify the width OR height value for an image so that the browser can automatically determine the unspecified value and maintain the proportions of the image.</p>
                 <p>For Example,</p>
                     <!-- insert example here -->
+                    <img class="demo" src="assets/images/29a-width.png" alt="Example of Width CSS"/>
+                    <img class="demo" src="assets/images/29b-width.png" alt="Example of Width Result"/>
 
                 <h3>Height</h3>
                 <p>The height property controls the height of an element.   Like the width property, it is important to note that padding, borders, and margins are NOT included in the height of an element.</p>
@@ -23,7 +25,8 @@
                 <p><b>Tip: </b> Only specify the width OR height value for an image so that the browser can automatically determine the unspecified value and maintain the proportions of the image.</p>
                 <p>Height Example:</p>
                     <!-- insert example here -->
-
+                    <img class="demo" src="assets/images/30a-height.png" alt="Example of Height CSS"/>
+                    <img class="demo" src="assets/images/30b-height.png" alt="Example of Height Result"/>
                 <h3>Overflow</h3>
                 <p>The overflow property determines what occurs if content overflows – or extends beyond – an element’s container.  It is only a factor when there is a block element of a specified height.  If all of the content cannot fit within its block element container, the browser needs to know how to display or not display the extra content.</p>
                 <p>Common overflow property values:</p>
@@ -37,7 +40,9 @@
                 
             </main>
 
-            <div><a href="QuizFormCh6.php">Ready to take the Chapter Quiz? Test your knowledge</a></div>
+            <div class="centering">
+                <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh6.php'"/>
+            </div>
 
             <?php
                 include "assets/inc/commentSection.php";

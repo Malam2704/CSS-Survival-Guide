@@ -9,7 +9,7 @@
 		//die("Check to see if this person exists and matched: " . $_POST['uname']);
 		$Username = $_POST['uname'];
 		// Add the star between SELECT and FROM
-		$stmp = $mysqli->prepare("SELECT `pass` FROM `groupProject` WHERE `uname` = ? LIMIT 1");
+		$stmp = $mysqli->prepare("SELECT `pass` FROM `groupProjectLoginAccounts` WHERE `uname` = ? LIMIT 1");
 
 		$stmp->bind_param("s",$_POST['uname']);
 
@@ -38,8 +38,11 @@
 		<link href="assets/css/intro.css" rel="stylesheet" type="text/CSS">
 	</head>
 	<body>
+		<img id="index-logo" src="assets/images/indexPageLogo" alt="Hip Hip Array's logo and team name image"/>
+
 		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-			<h1 class="everything headtitle" style ="color:#FF5700; font-weight: 700;">The CSS Survival Guide</h1>
+			<div class=index-txt-bg>
+			<h1 class="everything headtitle" style ="color:#FF5700; font-weight: 700;">CSS Survival Guide</h1>
 			<div class="everything">
 				User Name:
 				<input type="text" name="uname" size="30" />
@@ -47,6 +50,7 @@
 			<div class="everything">
 				Password:
 				<input type="password" name="pass" size="30" />
+			</div>
 			</div>
 			<div class="clearfix everything">
 				<input type="reset" value="Reset Fields" style="margin: 1.5em; padding: 0.5em"/>

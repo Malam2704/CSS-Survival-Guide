@@ -1,9 +1,18 @@
 body{
     background-image: url("../images/login_background.jpg");
 }
+
+#index-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 20%;
+}
+
 [type="button"],[type="reset"],[type="submit"] {
     background-color: #23222c;
-    color: white;
+    color: #E6E6E6;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -14,24 +23,29 @@ body{
     border: 2px solid #FF5700;
 }
 
-[type="button"]:hover,[type="reset"]:hover,[type="submit"]:hover{
-    border: 2px solid #8dc8ee;
-}
-
 input:hover{
-    color: #8dc8ee;
+    color: #24243C;
 }
 .headtitle{
     color: #FF5700;
     font-size: 250%;
-    margin-top: 250px;
 }
 .everything{
-    width: 500px;
+    /* width: 500px; */
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    font-weight: bold;
 }
+
+.index-txt-bg{
+    background: rgb(35, 34, 44, 0.5);
+    border-radius: 25px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 form div,form h1,form h3{
     margin: 1em;
 }
@@ -43,7 +57,7 @@ form div.radio {
     float: left;
 }
 .clearfix {
-    color: #8dc8ee;
+    color: #396BF7;
     clear: both;
 }
 @media only screen and (max-width:600px){

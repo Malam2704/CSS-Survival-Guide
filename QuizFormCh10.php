@@ -44,8 +44,8 @@ $pageName = "Chapter 10 Quiz";
         <b>Question 1.
         <br>True or false?  The order of rules on a style sheet matters.<br></b>
         <blockquote>
-            <input type="radio" name="q1" value="a">a. True<br>
-            <input type="radio" name="q1" value="b">b. False<br>
+            <input type="radio" name="q1" value="a"> a. True<br>
+            <input type="radio" name="q1" value="b"> b. False<br>
         </blockquote>
 
         <hr/>
@@ -53,8 +53,8 @@ $pageName = "Chapter 10 Quiz";
         <b>Question 2.
         <br>True or false?  CSS rules can be overwritten by other CSS rules.<br></b>
         <blockquote>
-            <input type="radio" name="q2" value="a">a. True<br>
-            <input type="radio" name="q2" value="b">b. False<br>
+            <input type="radio" name="q2" value="a"> a. True<br>
+            <input type="radio" name="q2" value="b"> b. False<br>
         </blockquote>
 
         <hr/>
@@ -62,10 +62,10 @@ $pageName = "Chapter 10 Quiz";
         <b>Question 3.
         <br>Which of the following is more specific?<br></b>
         <blockquote>
-            <input type="radio" name="q3" value="a">a. element selector<br>
-            <input type="radio" name="q3" value="b">b. class<br>
-            <input type="radio" name="q3" value="c">c. id<br>
-            <input type="radio" name="q3" value="d">d. All 3 are equal in specificity<br>
+            <input type="radio" name="q3" value="a"> a. element selector<br>
+            <input type="radio" name="q3" value="b"> b. class<br>
+            <input type="radio" name="q3" value="c"> c. id<br>
+            <input type="radio" name="q3" value="d"> d. All 3 are equal in specificity<br>
         </blockquote>
 
         <hr/>
@@ -73,10 +73,10 @@ $pageName = "Chapter 10 Quiz";
         <b>Question 4.
         <br>Which of the following is least specific?<br></b>
         <blockquote>
-            <input type="radio" name="q4" value="a">a. element selector<br>
-            <input type="radio" name="q4" value="b">b. class<br>
-            <input type="radio" name="q4" value="c">c. id<br>
-            <input type="radio" name="q4" value="d">d. All 3 are equal in specificity<br>
+            <input type="radio" name="q4" value="a"> a. element selector<br>
+            <input type="radio" name="q4" value="b"> b. class<br>
+            <input type="radio" name="q4" value="c"> c. id<br>
+            <input type="radio" name="q4" value="d"> d. All 3 are equal in specificity<br>
         </blockquote>
 
         <hr/>
@@ -84,16 +84,18 @@ $pageName = "Chapter 10 Quiz";
         <b>Question 5.
         <br>If two selectors are equally specific and affect the same property, which one will have its rules applied?<br></b>
         <blockquote>
-            <input type="radio" name="q5" value="a">a. The one written first on the style sheet<br>
-            <input type="radio" name="q5" value="b">b. The one written last on the style sheet<br>
-            <input type="radio" name="q5" value="c">c. An error will occur<br>
-            <input type="radio" name="q5" value="d">d. The one applied will be unpredictable<br>
+            <input type="radio" name="q5" value="a"> a. The one written first on the style sheet<br>
+            <input type="radio" name="q5" value="b"> b. The one written last on the style sheet<br>
+            <input type="radio" name="q5" value="c"> c. An error will occur<br>
+            <input type="radio" name="q5" value="d"> d. The one applied will be unpredictable<br>
         </blockquote>
 
         <hr/>
 
-        <input type="submit" value="Submit Quiz" >
-        <input type="reset" value="Clear">
+        <div class="centering">
+            <input type="submit" value="Submit Quiz" >
+            <input type="reset" value="Clear">
+        </div>
     </form>
 
 </body>

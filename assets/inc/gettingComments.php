@@ -14,20 +14,22 @@
 				3)execute
 				4)close
 			*/
-			if(isset($_GET['name']) && isset($_GET['com'])){
-				$stmt = $mysqli->prepare("INSERT INTO `exercise` (`uname`, `comment`, `last_modified`) VALUES (?, ?, now())");
+			if(isset($_GET['name']) && isset($_GET['com']) && $_GET['com'] != ""){
+				$stmt = $mysqli->prepare("INSERT INTO `commentSection` (`uname`, `comment`, `last_modified`) VALUES (?, ?, now())");
 				$filename = "home.php";
 //				$nowTime = date("F d Y H:i:s.", filemtime($filename));
 				$stmt->bind_param("ss",$_GET["name"],$_GET["com"]);
 				$stmt->execute();
 				$stmt->close();
+				$_GET = array();
+				unset($_GET);
 			}
 			
 
 			// get the first and last from the 240Inserttable
 			// get the contents of the table and send back...
 			// $sql = "SELECT Lastname, Age FROM Persons ORDER BY Lastname";
-			$sql = "SELECT * FROM `exercise`";
+			$sql = "SELECT * FROM `commentSection`";
 			$result = $mysqli->query($sql);
 			// var_dump($result);
 			// $row = $result->fetch_assoc();

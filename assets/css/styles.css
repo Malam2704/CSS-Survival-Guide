@@ -10,7 +10,7 @@
 
 body {
   background-color: #24243C;
-  color:rgb(255, 111, 59);
+  color:#E6E6E6;
   font-family: 'Roboto', sans-serif;
 }
 .wrapper{
@@ -65,7 +65,7 @@ tr:nth-child(even) {
 nav{
   padding-top: 1.5em;
   padding-bottom: 1.5em;
-  border-bottom: 0.5em solid #C4C4C4;
+  border-bottom: 0.5em solid #999999;
   margin-bottom: 2em;
 }
 nav ul{
@@ -78,7 +78,7 @@ nav ul{
 }
 nav li{
   width: 100%;
-  border: 5px solid #C4C4C4;
+  border: 5px solid #999999;
 }
 nav li a{
   text-decoration: none;
@@ -86,12 +86,21 @@ nav li a{
 
 a:link{color: #FF5700}
 a:visited{color: #999999}
-nav li:hover,a:hover{color: #FFb300; border-color: orangered;}
+nav li:hover,a:hover{color: #FFb300; border-color: #FF5700;}
 a:active{color: #396BF7;}
 
+/* Highlight current page in nav */
+.active{
+  border: 5px solid #396BF7;
+}
+
+.active a {
+  color: #FFb300;
+}
+
 /* Page Layout & Style */
-h1, h2, h3, h4 {
-  color: #E6E6E6;
+h1, h2 {
+  color: #FF5700;
 }
 
 h2, h3 {
@@ -99,7 +108,12 @@ h2, h3 {
   text-decoration: underline;
 }
 
+h3 {
+  color:#FFb300;
+}
+
 h4 {
+  color:#396BF7;
   margin-left: 40px;
 }
 
@@ -113,15 +127,23 @@ p {
   text-indent: 20px;
 }
 
+hr{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 .indent {
   max-width: 100%;
   margin: 0px auto;
 }
 
 .tip {
-  color:orangered;
+  color:#FF5700;
   font-weight: bold;
   font-size: 1.2em;
+}
+
+.centering{
+  text-align: center;
 }
 
 footer {
@@ -131,25 +153,59 @@ footer {
   max-width: 100%;
 }
 
+/* Demo Images */
+.demo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border: 3px solid #FF5700;
+  margin-bottom: 3em;
+}
+
+
 /* Lists */
+/* ___________________________________________________ */
 ol, ul:not(nav ol, ul) {
   padding: 10px;
 }
 
-ol li, ul li:not(nav li){
+ol li, ul li:not(nav li):not(.commentUL li){
   padding: 5px;
   margin-left: 60px;
 }
 
-ul li:not(nav li){
+ul li:not(nav li):not(.commentUL li){
   padding: 5px;
   margin-left: 70px;
   list-style-type: square;
 }
+/* ___________________________________________________ */
 
+.commentUL li{
+  font-weight: 900;
+  padding: 2em;
+  list-style-type: none;
+  border: 1em solid #FF5700;
+  border-radius: 50px;
+  background: #ce2929;
+}
+.commentUL .dateName{
+  font-weight: 900;
+  text-decoration: underline;
+  font-size: x-large;
+}
+.commentUL .dateMod{
+  float: right;
+}
+
+/* ___________________________________________________ */
+/* The button styling such as the Add to List for comments, 
+and taking the quiz. Auto style to make them look nice and active and hovers
+for good UI experience. */
 [type="button"],[type="reset"],[type="submit"] {
   background-color: #23222c;
-  color: white;
+  color: #E6E6E6;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -157,30 +213,25 @@ ul li:not(nav li){
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border: 2px solid white;
+  border: 2px solid #FF5700;
   text-align: center;
 }
 [type="button"]:hover,[type="reset"]:hover,[type="submit"]:hover{
-    border: 5px solid #FF5700;
-    color: #FF5700;
-    padding: 3em;
+    border: 5px solid #FFb300;
+    color: #FFb300;
+    font-weight: bold;
 }
 
-@media only screen and (max-width:1000px){
-    nav ul{
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul li{
-        width: 70%;
-        margin: .25em;
-        border: 0.05em solid #C4C4C4;
-        padding: .25em;
-    }
+[type="button"]:active,[type="reset"]:active,[type="submit"]:active{
+  border: 5px solid #396BF7;
+  color: #396BF7;
+  font-weight: bold;
 }
-
-/* Side Bar Nav Section */
 /* ___________________________________________________ */
+
+
+/* ___________________________________________________ */
+/* Side Bar Nav Section */
 body {
   font-family: "Lato", sans-serif;
 }
@@ -192,7 +243,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: orangered;
+  background-color: #FF5700;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -208,7 +259,7 @@ body {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #E6E6E6;
 }
 
 .sidenav .closebtn {
@@ -218,9 +269,49 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
+/* ___________________________________________________ */
+
+
+/* ___________________________________________________ */
+/* Scroll Wheel */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #24243C;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#FF5700; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #396BF7; 
+}
+/* ___________________________________________________ */
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width:1000px){
+  nav ul{
+      flex-direction: column;
+      align-items: center;
+  }
+  nav ul li{
+      width: 70%;
+      margin: .25em;
+      border: 0.05em solid #C4C4C4;
+      padding: .25em;
+  }
 }
 
