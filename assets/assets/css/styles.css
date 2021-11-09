@@ -1,0 +1,445 @@
+/*  Group 6: ["Hip", "Hip"]
+    Spring 2021
+    ISTE240 Group Project
+    Stylesheet: CSS Survival Guide */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #24243C;
+  color:#E6E6E6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
+.wrapper{
+  padding-right: 35%;
+  padding-left: 15%;
+}
+
+/* The button to open the side nav */
+#sideNavIcon{
+  position: sticky;
+  top: 10px;
+  font-size:30px;
+  cursor:pointer; 
+  background-color: #FF5700; 
+  padding: 0.25em; 
+  border-radius: 10px; 
+  margin-left:0.3em;
+}
+
+/* Header Logo and Site Name */
+.hero-header {
+    background-color: #E6E6E6;
+    border: 5px solid #FF5700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes grow { from { width:0px; } to { width: 13%; } }
+@-moz-keyframes grow { from { width:0px; } to { width: 13%; } }
+@keyframes grow { from { width:0px; } to { width: 13%; } }
+
+.hero-img {
+  padding: 5px;
+  top: 10px;
+  width:0px;  /* make image invisible/width 0px upon start */
+  -webkit-animation: grow ease-in 1;  /* call keyframe named grow, use animation ease-in and repeat it only 1 time */
+  -moz-animation: grow ease-in 1;
+  animation: grow ease-in 1;
+
+  -webkit-animation-duration:2.0s;
+  -moz-animation-duration:2.0s;
+  animation-duration:2.0s;
+
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+
+  /* this makes sure that after animation is done the image remains at the last keyframe value*/
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+}
+
+.hero-text {
+    color: #FF5700;
+    font-size: 2em;
+    text-shadow: 1px 1px #24243C;
+    padding-left: 20px;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+td, th {
+  border: 5px solid #E6E6E6;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #396BF7;
+}
+
+/* Navigation */
+.nav-icon {
+  font-size: xx-large;
+    width: 40%;
+    max-width: 50px;
+}
+
+nav{
+  margin-bottom: 2em;
+}
+nav ul{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  font-size: large;
+  font-weight: bold;
+  list-style-type: none;
+}
+nav li{
+  width: 100%;
+  border: 5px solid #999999;
+  border-radius: 20px;
+}
+nav li a{
+  text-decoration: none;
+}
+
+a:link{color: #FF5700}
+a:visited{color: #999999}
+nav li:hover,a:hover{color: #FFb300; border-color: #FF5700;}
+a:active{color: #396BF7;}
+
+.topTitle{
+  font-size: 250%; 
+  margin-top: 1em; 
+  margin-bottom: 1em; 
+  text-decoration:underline; 
+  text-align:center;
+}
+/* Highlight current page in nav
+.active{
+  border: 5px solid #FF5700;
+} */
+
+.active a {
+  color: #FFb300;
+}
+
+/* Page Layout & Style */
+h1, h2 {
+  color: #FF5700;
+}
+
+h2, h3 {
+  max-width: 100%;
+  text-decoration: underline;
+}
+
+h3 {
+  color:#FFb300;
+}
+
+h4:not(footer) > h4 {
+  color:#396BF7;
+  margin-left: 40px;
+}
+
+h2 + h3 {
+  margin-top: 20px;
+}
+
+p:not(footer) {
+  margin: 20px;
+  max-width: 100%;
+  text-indent: 20px;
+  line-height: 1.3em;
+}
+
+hr{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.indent {
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+.tip {
+  color:#FF5700;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.centering{
+  text-align: center;
+}
+
+footer {
+  font-size: 0.8em;
+  max-width: 100%;
+  padding: 3em;
+  height: 15em;
+  background-color: #396BF7;
+}
+footer p{
+  margin: 1em;
+}
+
+/* Recaptcha CSS */
+.g-recaptcha{
+  margin-top: 1.5em;
+  display: inline-block;
+}
+.text-recaptcha-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Demo Images */
+.demo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #FF5700;
+  border-radius: 10px;
+  margin-bottom: 3em;
+  max-width: 100%;
+}
+
+
+/* Lists */
+/* ___________________________________________________ */
+ol{
+  padding: 10px;
+}
+
+ol{
+  padding: 5px;
+  margin-left: 60px;
+}
+
+ul{
+  padding: 5px;
+  list-style-type: square;
+}
+/* ___________________________________________________ */
+/* Comment Section */
+.commentUL li{
+  padding: 0.5em;
+  list-style-type: none;
+  border: 1em solid #FF5700;
+  border-radius: 50px;
+  background: #ce2929;
+}
+.commentUL .dateName{
+  font-weight: 900;
+  text-decoration: underline;
+  font-size: x-large;
+}
+.commentUL .dateMod{
+  float: right;
+}
+
+/* ___________________________________________________ */
+/* The button styling such as the Add to List for comments, 
+and taking the quiz. Auto style to make them look nice and active and hovers
+for good UI experience. */
+[type="button"],[type="reset"],[type="submit"] {
+  background-color: #23222c;
+  color: #E6E6E6;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px auto;
+  max-width: 90%;
+  cursor: pointer;
+  border: 5px solid #FF5700;
+  border-radius: 10px;
+  text-align: center;
+}
+[type="button"]:hover,[type="reset"]:hover,[type="submit"]:hover{
+  border: 5px solid #FFb300;
+  color: #FFb300;
+}
+[type="button"]:active,[type="reset"]:active,[type="submit"]:active{
+  border: 5px solid #396BF7;
+  color: #396BF7;
+}
+/* ___________________________________________________ */
+/* Mobile Nav */
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.topnav {
+  color: #E6E6E6;
+  overflow: hidden;
+  background-color: #24243C;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: #FF5700;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #FFb300;
+  border-color: #396BF7;
+  color: black;
+}
+
+.activeNav {
+  background-color: #E6E6E6;
+  border: 5px solid #FF5700;
+  color: #FF5700;
+}
+
+
+/* ___________________________________________________ */
+/* Side Bar Nav Section */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FF5700;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #24243C;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #E6E6E6;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* ___________________________________________________ */
+
+
+/* ___________________________________________________ */
+/* Scroll Wheel */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #24243C;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#FF5700; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #396BF7; 
+}
+/* ___________________________________________________ */
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width:1000px){
+  .wrapper{
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  nav ul{
+      flex-direction: column;
+      align-items: center;
+  }
+  nav ul li{
+      width: 70%;
+      margin: .25em;
+      border: 0.05em solid #C4C4C4;
+      padding: .25em;
+  }
+
+  body {
+    font-size: 1em;
+  }
+
+  p {
+    line-height: 1.1em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  [type="button"],[type="reset"],[type="submit"] {
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+
+  .sidenav a {
+    font-size: 22px;
+  }
+}

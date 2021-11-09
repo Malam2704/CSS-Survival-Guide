@@ -40,10 +40,10 @@ $pageName = "Chapter 6 Quiz";
         <b>Question 1.
         <br>What is the default width of a &lt;div&gt;?<br></b>
         <blockquote>
-            <input type="radio" name="q1" value="a"> a. 0<br>
-            <input type="radio" name="q1" value="b"> b. 100%<br>
-            <input type="radio" name="q1" value="c"> c. It depends on the browser<br>
-            <input type="radio" name="q1" value="d"> d. A &lt;div&gt; has no width until it is specified<br>
+            <input type="radio" name="q1" value="a">a. 0<br>
+            <input type="radio" name="q1" value="b">b. 100%<br>
+            <input type="radio" name="q1" value="c">c. It depends on the browser<br>
+            <input type="radio" name="q1" value="d">d. A &lt;div&gt; has no width until it is specified<br>
         </blockquote>
 
         <hr/>
@@ -51,10 +51,10 @@ $pageName = "Chapter 6 Quiz";
         <b>Question 2.
         <br>Which of the following is NOT included in the width of an element<br></b>
         <blockquote>
-            <input type="radio" name="q2" value="a"> a. padding<br>
-            <input type="radio" name="q2" value="b"> b. borders<br>
-            <input type="radio" name="q2" value="c"> c. margin<br>
-            <input type="radio" name="q2" value="d"> d. All of the above<br>
+            <input type="radio" name="q2" value="a">a. padding<br>
+            <input type="radio" name="q2" value="b">b. borders<br>
+            <input type="radio" name="q2" value="c">c. margin<br>
+            <input type="radio" name="q2" value="d">d. All of the above<br>
         </blockquote>
 
         <hr/>
@@ -62,10 +62,10 @@ $pageName = "Chapter 6 Quiz";
         <b>Question 3.
         <br>What happens if you specify the height of an element and not the width?<br></b>
         <blockquote>
-            <input type="radio" name="q3" value="a"> a. The browser automatically calculates the width and proportions are maintained<br>
-            <input type="radio" name="q3" value="b"> b. There is no width and the element will not be visible on the screen<br>
-            <input type="radio" name="q3" value="c"> c. The element will appear distorted, regardless of what height is set<br>
-            <input type="radio" name="q3" value="d"> d. An error will occur<br>
+            <input type="radio" name="q3" value="a">a. The browser automatically calculates the width and proportions are maintained<br>
+            <input type="radio" name="q3" value="b">b. There is no width and the element will not be visible on the screen<br>
+            <input type="radio" name="q3" value="c">c. The element will appear distorted, regardless of what height is set<br>
+            <input type="radio" name="q3" value="d">d. An error will occur<br>
         </blockquote>
 
         <hr/>
@@ -73,10 +73,10 @@ $pageName = "Chapter 6 Quiz";
         <b>Question 4.
         <br>Which of the following is NOT a valid property?<br></b>
         <blockquote>
-            <input type="radio" name="q4" value="a"> a. width<br>
-            <input type="radio" name="q4" value="b"> b. min-width<br>
-            <input type="radio" name="q4" value="c"> c. max-width<br>
-            <input type="radio" name="q4" value="d"> d. total-width<br>
+            <input type="radio" name="q4" value="a">a. width<br>
+            <input type="radio" name="q4" value="b">b. min-width<br>
+            <input type="radio" name="q4" value="c">c. max-width<br>
+            <input type="radio" name="q4" value="d">d. total-width<br>
         </blockquote>
 
         <hr/>
@@ -84,18 +84,16 @@ $pageName = "Chapter 6 Quiz";
         <b>Question 5.
         <br>What overflow value is required if you want a scroll bar added to enable viewing of overflowed content?<br></b>
         <blockquote>
-            <input type="radio" name="q5" value="a"> a. true<br>
-            <input type="radio" name="q5" value="b"> b. yes<br>
-            <input type="radio" name="q5" value="c"> c. scroll<br>
-            <input type="radio" name="q5" value="d"> d. scrollbar<br>
+            <input type="radio" name="q5" value="a">a. true<br>
+            <input type="radio" name="q5" value="b">b. yes<br>
+            <input type="radio" name="q5" value="c">c. scroll<br>
+            <input type="radio" name="q5" value="d">d. scrollbar<br>
         </blockquote>
 
         <hr/>
 
-        <div class="centering">
-            <input type="submit" value="Submit Quiz" >
-            <input type="reset" value="Clear">
-        </div>
+        <input type="submit" value="Submit Quiz" >
+        <input type="reset" value="Clear">
     </form>
 
 </body>

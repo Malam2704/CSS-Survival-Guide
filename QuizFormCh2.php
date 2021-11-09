@@ -40,10 +40,10 @@
         <b>Question 1.
         <br>How do you target the components of a web page to style?<br></b>
         <blockquote>
-            <input type="radio" name="q1" value="a"> a. CSS options<br>
-            <input type="radio" name="q1" value="b"> b. CSS targets<br>
-            <input type="radio" name="q1" value="c"> c. CSS selectors<br>
-            <input type="radio" name="q1" value="d"> d. CSS items<br>
+            <input type="radio" name="q1" value="a">a. CSS options<br>
+            <input type="radio" name="q1" value="b">b. CSS targets<br>
+            <input type="radio" name="q1" value="c">c. CSS selectors<br>
+            <input type="radio" name="q1" value="d">d. CSS items<br>
         </blockquote>
 
         <hr/>
@@ -51,10 +51,10 @@
         <b>Question 2.
         <br>Where is a selector found within a CSS rule?<br></b>
         <blockquote>
-            <input type="radio" name="q2" value="a"> a. Before the curly braces<br>
-            <input type="radio" name="q2" value="b"> b. Inside the curly braces<br>
-            <input type="radio" name="q2" value="c"> c. After the curly braces<br>
-            <input type="radio" name="q2" value="d"> d. Before and after the curly braces<br>
+            <input type="radio" name="q2" value="a">a. Before the curly braces<br>
+            <input type="radio" name="q2" value="b">b. Inside the curly braces<br>
+            <input type="radio" name="q2" value="c">c. After the curly braces<br>
+            <input type="radio" name="q2" value="d">d. Before and after the curly braces<br>
         </blockquote>
 
         <hr/>
@@ -62,10 +62,10 @@
         <b>Question 3.
         <br>How many elements are targeted with an ID selector?<br></b>
         <blockquote>
-            <input type="radio" name="q3" value="a"> a. 1<br>
-            <input type="radio" name="q3" value="b"> b. 2<br>
-            <input type="radio" name="q3" value="c"> c. The number of elements with the given ID name<br>
-            <input type="radio" name="q3" value="d"> d. ID is not a valid selector<br>
+            <input type="radio" name="q3" value="a">a. 1<br>
+            <input type="radio" name="q3" value="b">b. 2<br>
+            <input type="radio" name="q3" value="c">c. The number of elements with the given ID name<br>
+            <input type="radio" name="q3" value="d">d. ID is not a valid selector<br>
         </blockquote>
 
         <hr/>
@@ -73,10 +73,10 @@
         <b>Question 4.
         <br>How many elements are targeted with a class selector?<br></b>
         <blockquote>
-            <input type="radio" name="q4" value="a"> a. 1<br>
-            <input type="radio" name="q4" value="b"> b. 2<br>
-            <input type="radio" name="q4" value="c"> c. The number of elements with the given class name<br>
-            <input type="radio" name="q4" value="d"> d. Class is not a valid selector<br>
+            <input type="radio" name="q4" value="a">a. 1<br>
+            <input type="radio" name="q4" value="b">b. 2<br>
+            <input type="radio" name="q4" value="c">c. The number of elements with the given class name<br>
+            <input type="radio" name="q4" value="d">d. Class is not a valid selector<br>
         </blockquote>
 
         <hr/>
@@ -84,18 +84,16 @@
         <b>Question 5.
         <br>What is the correct way to target all span elements that are inside a heading (h1)?<br></b>
         <blockquote>
-            <input type="radio" name="q5" value="a"> a. h1(span)<br>
-            <input type="radio" name="q5" value="b"> b. span(h1)<br>
-            <input type="radio" name="q5" value="c"> c. span, h1<br>
-            <input type="radio" name="q5" value="d"> d. h1 span<br>
+            <input type="radio" name="q5" value="a">a. h1(span)<br>
+            <input type="radio" name="q5" value="b">b. span(h1)<br>
+            <input type="radio" name="q5" value="c">c. span, h1<br>
+            <input type="radio" name="q5" value="d">d. h1 span<br>
         </blockquote>
 
         <hr/>
 
-        <div class="centering">
-            <input type="submit" value="Submit Quiz" >
-            <input type="reset" value="Clear">
-        </div>
+        <input type="submit" value="Submit Quiz" >
+        <input type="reset" value="Clear">
     </form>
 
 </body>

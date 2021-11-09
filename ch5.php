@@ -14,16 +14,11 @@
                 <p>When targeting specific elements with CSS, consider using the &lt;span&gt; tag, an inline container, or the &lt;div&gt; tag, a block container.  Both tags can be given an ID or class name, which can then be styled.</p>
                 <p>For Example,</p>
                     <!-- insert example here -->
-                    <img class="demo" src="assets/images/26-span.png" alt="Example of HTML span"/>
-                    <img class="demo" src="assets/images/27-span.png" alt="Example of CSS span"/>
-                    <img class="demo" src="assets/images/28-span.png" alt="Example of span"/>
                 <p>The upcoming chapters will discuss properties that will allow for the alteration of the default page layout.</p>
 
             </main>
 
-            <div class="centering">
-                <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh5.php'"/>
-            </div>
+            <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh5.php'"/>
 
             <?php
                 include "assets/inc/commentSection.php";

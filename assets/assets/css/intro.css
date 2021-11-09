@@ -1,0 +1,106 @@
+body{
+    background-image: url("../images/login_background.jpg");
+    color: #E6E6E6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+#index-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 20%;
+}
+
+[type="button"],[type="reset"],[type="submit"] {
+    background-color: #23222c;
+    color: #E6E6E6;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    max-width: 90%;
+    cursor: pointer;
+    border: 5px solid #FF5700;
+    border-radius: 10px;
+    text-align: center;
+}
+[type="button"]:hover,[type="reset"]:hover,[type="submit"]:hover{
+    border: 5px solid #FFb300;
+    color: #FFb300;
+}
+[type="button"]:active,[type="reset"]:active,[type="submit"]:active{
+    border: 5px solid #396BF7;
+    color: #396BF7;
+}
+
+input:hover{
+    color: #24243C;
+}
+.headtitle{
+    color: #FF5700;
+    font-size: 250%;
+}
+.everything{
+    /* width: 500px; */
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.index-txt-bg{
+    background: rgb(35, 34, 44, 0.5);
+    border-radius: 25px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form div,form h1,form h3{
+    margin: 1em;
+}
+form div label{
+    float: left;
+    width: 10%;
+}
+form div.radio {
+    float: left;
+}
+.clearfix {
+    color: #396BF7;
+    clear: both;
+}
+
+/* ___________________________________________________ */
+/* Scroll Wheel */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #24243C;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#FF5700; 
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #396BF7; 
+}
+/* ___________________________________________________ */
+
+@media only screen and (max-width:600px){
+    .everything,.headtitle{
+        margin: 0;
+        width: 100%;
+    }
+}

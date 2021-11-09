@@ -24,11 +24,11 @@
             <?php
                 if(sizeof($records) > 10){
                     for ($x = 0; $x <= 10; $x++) {
-                        $commentString .= '<li><span class="dateName"> Username: ' . $records[$x]['uname'] . "</span> <span class='dateMod'> Date Posted: " . $records[$x]['last_modified'] . "</span><p> Comment: " . $records[$x]['comment'] . "</p></li><br>";
+                        $commentString .= '<li> Username: ' . $records[$x]['uname'] . "<p> Comment: " . $records[$x]['comment'] . "</p><p> Date Posted: " . $records[$x]['last_modified'] . '</p></li><br>';
                     }
                 }else{
                     for ($x = 0; $x < sizeof($records); $x++) {
-                        $commentString .= '<li><span class="dateName"> Username: ' . $records[$x]['uname'] . "</span> <span class='dateMod'> Date Posted: " . $records[$x]['last_modified'] . "</span><p> Comment: " . $records[$x]['comment'] . "</p></li><br>";
+                        $commentString .= '<li> Username: ' . $records[$x]['uname'] . "<p> Comment: " . $records[$x]['comment'] . "</p><p> Date Posted: " . $records[$x]['last_modified'] . '</p></li><br>';
                     }
                 }
                 // foreach($records as $this_row){
@@ -38,7 +38,7 @@
                 if(sizeof($records) > 10){
                     if(isset($_GET['loaded'])){
                         for ($x = 10; $x < sizeof($records); $x++) {
-                            $commentString .= '<li><span class="dateName"> Username: ' . $records[$x]['uname'] . "</span> <span class='dateMod'> Date Posted: " . $records[$x]['last_modified'] . "</span><p> Comment: " . $records[$x]['comment'] . "</p></li><br>";
+                            $commentString .= '<li> Username: ' . $records[$x]['uname'] . "<p> Comment: " . $records[$x]['comment'] . "</p><p> Date Posted: " . $records[$x]['last_modified'] . '</p></li><br>';
                         }
                         $noMoreButton = true;
                     }

@@ -40,10 +40,10 @@ $pageName = "Chapter 5 Quiz";
         <b>Question 1.
         <br>What is the default layout of elements on a web page?<br></b>
         <blockquote>
-            <input type="radio" name="q1" value="a"> a. Regular flow<br>
-            <input type="radio" name="q1" value="b"> b. Normal flow<br>
-            <input type="radio" name="q1" value="c"> c. Default flow<br>
-            <input type="radio" name="q1" value="d"> d. Elements do not appear on a page until specified by CSS<br>
+            <input type="radio" name="q1" value="a">a. Regular flow<br>
+            <input type="radio" name="q1" value="b">b. Normal flow<br>
+            <input type="radio" name="q1" value="c">c. Default flow<br>
+            <input type="radio" name="q1" value="d">d. Elements do not appear on a page until specified by CSS<br>
         </blockquote>
 
         <hr/>
@@ -51,10 +51,10 @@ $pageName = "Chapter 5 Quiz";
         <b>Question 2.
         <br>What are the two types of elements?<br></b>
         <blockquote>
-            <input type="radio" name="q2" value="a"> a. Inline and Outline<br>
-            <input type="radio" name="q2" value="b"> b. Inner and Outer<br>
-            <input type="radio" name="q2" value="c"> c. Inline and Block<br>
-            <input type="radio" name="q2" value="d"> d. Block and Linear<br>
+            <input type="radio" name="q2" value="a">a. Inline and Outline<br>
+            <input type="radio" name="q2" value="b">b. Inner and Outer<br>
+            <input type="radio" name="q2" value="c">c. Inline and Block<br>
+            <input type="radio" name="q2" value="d">d. Block and Linear<br>
         </blockquote>
 
         <hr/>
@@ -62,10 +62,10 @@ $pageName = "Chapter 5 Quiz";
         <b>Question 3.
         <br>What tag is an example of an inline element?<br></b>
         <blockquote>
-            <input type="radio" name="q3" value="a"> a. &lt;a&gt;<br>
-            <input type="radio" name="q3" value="b"> b. &lt;div&gt;<br>
-            <input type="radio" name="q3" value="c"> c. &lt;p&gt;<br>
-            <input type="radio" name="q3" value="d"> d. &lt;h1&gt;<br>
+            <input type="radio" name="q3" value="a">a. &lt;a&gt;<br>
+            <input type="radio" name="q3" value="b">b. &lt;div&gt;<br>
+            <input type="radio" name="q3" value="c">c. &lt;p&gt;<br>
+            <input type="radio" name="q3" value="d">d. &lt;h1&gt;<br>
         </blockquote>
 
         <hr/>
@@ -73,10 +73,10 @@ $pageName = "Chapter 5 Quiz";
         <b>Question 4.
         <br>What tag is an example of a block element?<br></b>
         <blockquote>
-            <input type="radio" name="q4" value="a"> a. &lt;a&gt;<br>
-            <input type="radio" name="q4" value="b"> b. &lt;img&gt;<br>
-            <input type="radio" name="q4" value="c"> c. &lt;span&gt;<br>
-            <input type="radio" name="q4" value="d"> d. &lt;div&gt;<br>
+            <input type="radio" name="q4" value="a">a. &lt;a&gt;<br>
+            <input type="radio" name="q4" value="b">b. &lt;img&gt;<br>
+            <input type="radio" name="q4" value="c">c. &lt;span&gt;<br>
+            <input type="radio" name="q4" value="d">d. &lt;div&gt;<br>
         </blockquote>
 
         <hr/>
@@ -84,16 +84,14 @@ $pageName = "Chapter 5 Quiz";
         <b>Question 5.
         <br>True or False?  A span tag can be given a class name.<br></b>
         <blockquote>
-            <input type="radio" name="q5" value="a"> a. True<br>
-            <input type="radio" name="q5" value="b"> b. False<br>
+            <input type="radio" name="q5" value="a">a. True<br>
+            <input type="radio" name="q5" value="b">b. False<br>
         </blockquote>
 
         <hr/>
 
-        <div class="centering">
-            <input type="submit" value="Submit Quiz" >
-            <input type="reset" value="Clear">
-        </div>
+        <input type="submit" value="Submit Quiz" >
+        <input type="reset" value="Clear">
     </form>
 
 </body>

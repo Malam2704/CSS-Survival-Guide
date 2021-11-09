@@ -26,14 +26,6 @@
                 <p>Multiple values can also be listed using a space between each to target specific margins.  When four values are used, margins are targeted clockwise, starting with the top margin (i.e. margin: 20px 10px 15px 5px; where the top margin is 20px, the right margin is 15px, the bottom margin is 10px, and the left margin is 5px).  Using three values would apply to the top, right, and bottom margins respectively and using two values would apply the first value to the top and bottom margins and the second value to the right and left margins.</p>
                 <p>Each individual side can also have its margin defined separately using the margin-top, margin-right, margin-bottom, and margin-left properties.</p>
                 <p>Commons values for margin include auto – the browser calculates the margin, length values, and percentages.</p>
-                <p>Margin Example:</p>
-                    <!-- insert example here -->
-                    <img class="demo" src="assets/images/31c-margin.png" alt="Example of No Margin HTML"/>
-                    <img class="demo" src="assets/images/31d-margin.png" alt="Example of No Margin CSS"/>
-                    <img class="demo" src="assets/images/31e-margin.png" alt="Example of No Margin Result"/>
-                    <img class="demo" src="assets/images/31f-margin.png" alt="Example of Margin HTML"/>
-                    <img class="demo" src="assets/images/31g-margin.png" alt="Example of Margin CSS"/>
-                    <img class="demo" src="assets/images/31h-margin.png" alt="Example of Margin Result"/>
 
                 <h3>Padding</h3>
                 <p>The format for setting the padding of an element and the available values mimic those of margin.</p>
@@ -41,20 +33,12 @@
                 <p>Multiple values can also be listed using a space between each to target specific sides.  When four values are used, padding is targeted clockwise, starting with the top padding (i.e. padding: 20px 10px 15px 5px; where the top padding is 20px, the right padding is 15px, the bottom padding is 10px, and the left padding is 5px).  Using three values would apply to the top, right, and bottom padding respectively and using two values would apply the first value to the top and bottom padding and the second value to the right and left padding.</p>
                 <p>Each individual side can also have its padding defined separately using the padding-top, padding-right, padding-bottom, and padding-left properties.</p>
                 <p>Commons values for padding include auto – the browser calculates the padding, length values, and percentages.</p>
-                <p>Padding Example:</p>
-                    <!-- insert example here -->
-                    <img class="demo" src="assets/images/31i-padding.png" alt="Example of Padding HTML"/>
-                    <img class="demo" src="assets/images/31j-padding.png" alt="Example of Padding CSS"/>
-                    <img class="demo" src="assets/images/31k-padding.png" alt="Example of Padding Result"/>
 
                 <h3>Border</h3>
                 <p>Border properties allow the specification of the style, width, and color of an element’s border using border-style, border-width, and border-color, respectively.</p>
                     <h4>Style</h4>
                     <p>The same border-style can be applied to all four sides using a single value, or – like with margin and padding – different border styles can be specified for different sides.  Values for border-style and a demonstration of their results can be seen below:</p>
                         <!-- Insert (Demo border-styles for dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden, and mixed) -->
-                        <img class="demo" src="assets/images/31a-border-style.png" alt="Example of Border-style HTML"/>
-                        <img class="demo" src="assets/images/31b-border-style.png" alt="Example of Border-style CSS"/>
-                        <img class="demo" src="assets/images/31c-border-style.png" alt="Example of Border-style Result"/>
                     
                         <h4>Width</h4>
                         <p>The same border-width can be applied to all four sides using a single value, or – like with margin and padding – different border widths can be specified for different sides.  The values thin, medium, and thick can be used, or a size values such as px, cm, em, etc.</p>
@@ -66,14 +50,11 @@
                         <p>The border property combines setting the width, style, and color of a border in a single property.  The general format for this property is border: width style color;</p>
                         <p>For Example,</p>
                             <!-- insert example here -->
-                            <img class="demo" src="assets/images/31a-border.png" alt="Example of Border CSS"/>
-                            <img class="demo" src="assets/images/31b-border.png" alt="Example of Border Result"/>
+
             </main>
 
-            <div class="centering">
-                <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh7.php'"/>
-            </div>
-            
+            <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh7.php'"/>
+
             <?php
                 include "assets/inc/commentSection.php";
             ?>

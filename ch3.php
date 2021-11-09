@@ -15,18 +15,15 @@
                 <p>For Example,</p>
                 <p>If you want to make all paragraphs on a page red, all of the following would accomplish the same goal:</p>
                     <!-- insert example here -->
-                    <img class="demo" src="assets/images/15-color.png" alt="Example of Color"/>
+                
                 <h3>Background-Color</h3>
                 <p>Like text color, the background color of elements can also be controlled using the background or background-color property. </p>
                 <p>For Example,</p>
                     <!-- insert example here -->
-                    <img class="demo" src="assets/images/16-backgroundColor.png" alt="Example of Background Color CSS"/>
-                    <img class="demo" src="assets/images/16a-backgroundColor.png" alt="Example of Background Color Result"/>
+
             </main>
 
-            <div class="centering">
-                <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh3.php'"/>
-            </div>
+            <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh3.php'"/>
 
             <?php
                 include "assets/inc/commentSection.php";

@@ -25,7 +25,7 @@
 					$eMessage = "Hello, you have made an account with user " . 
 						$_POST['uname'] . " and with a password of " . $_POST['pass'];
 					mail($uMail,"CSS Survival Guide Account Created",$eMessage);
-					mail("mohammedal2144@gmail.com", "CSS Survival Guide Account Created" ,$eMessage . " by " .$uMail);
+					mail("mohammedal2144@gmail.com", $subject ,$message . " by " .$theirEmail);
 					
 					$stmp->bind_param("sss",$uName,$uMail,$hashedPassword);
 					$stmp->execute();

@@ -9,8 +9,8 @@
 }
 
 body {
-  background-color: #24243C;
-  color:#E6E6E6;
+  background-color: #212125;
+  color: #d4dfcb;
   font-family: 'Roboto', sans-serif;
 }
 .wrapper{
@@ -21,7 +21,7 @@ body {
 /* Header Logo and Site Name */
 .hero-header {
     background-color: #E6E6E6;
-    border: 5px solid #FF5700;
+    border: 5px solid #819c27;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,9 +33,9 @@ body {
 }
 
 .hero-text {
-    color: #FF5700;
+    color: #819c27;
     font-size: 2em;
-    text-shadow: 1px 1px #24243C;
+    text-shadow: 1px 1px #232126;
     padding-left: 20px;
 }
 
@@ -84,23 +84,23 @@ nav li a{
   text-decoration: none;
 }
 
-a:link{color: #FF5700}
+a:link{color: #819c27}
 a:visited{color: #999999}
-nav li:hover,a:hover{color: #FFb300; border-color: #FF5700;}
-a:active{color: #396BF7;}
+nav li:hover,a:hover{color: #FF5700; border-color: #819c27;}
+a:active{color: #FF5700;}
 
 /* Highlight current page in nav */
 .active{
-  border: 5px solid #396BF7;
+  border: 5px solid #FF5700;
 }
 
 .active a {
-  color: #FFb300;
+  color: #FF5700;
 }
 
 /* Page Layout & Style */
 h1, h2 {
-  color: #FF5700;
+  color: #819c27;
 }
 
 h2, h3 {
@@ -109,7 +109,7 @@ h2, h3 {
 }
 
 h3 {
-  color:#FFb300;
+  color:#FF5700;
 }
 
 h4 {
@@ -137,13 +137,9 @@ hr{
 }
 
 .tip {
-  color:#FF5700;
+  color:#819c27;
   font-weight: bold;
   font-size: 1.2em;
-}
-
-.centering{
-  text-align: center;
 }
 
 footer {
@@ -159,8 +155,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   width: 75%;
-  border: 3px solid #FF5700;
-  margin-bottom: 3em;
+  border: 3px solid #819c27;
 }
 
 
@@ -183,20 +178,9 @@ ul li:not(nav li):not(.commentUL li){
 /* ___________________________________________________ */
 
 .commentUL li{
-  font-weight: 900;
-  padding: 2em;
-  list-style-type: none;
-  border: 1em solid #FF5700;
-  border-radius: 50px;
-  background: #ce2929;
-}
-.commentUL .dateName{
-  font-weight: 900;
-  text-decoration: underline;
-  font-size: x-large;
-}
-.commentUL .dateMod{
-  float: right;
+  padding: 6px;
+  list-style-type: none; 
+  border: 5px solid #819c27;
 }
 
 /* ___________________________________________________ */
@@ -204,7 +188,7 @@ ul li:not(nav li):not(.commentUL li){
 and taking the quiz. Auto style to make them look nice and active and hovers
 for good UI experience. */
 [type="button"],[type="reset"],[type="submit"] {
-  background-color: #23222c;
+  background-color: #232126;
   color: #E6E6E6;
   padding: 15px 32px;
   text-align: center;
@@ -213,18 +197,18 @@ for good UI experience. */
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border: 2px solid #FF5700;
+  border: 2px solid #819c27;
   text-align: center;
 }
 [type="button"]:hover,[type="reset"]:hover,[type="submit"]:hover{
-    border: 5px solid #FFb300;
-    color: #FFb300;
+    border: 5px solid #FF5700;
+    color: #FF5700;
     font-weight: bold;
 }
 
 [type="button"]:active,[type="reset"]:active,[type="submit"]:active{
-  border: 5px solid #396BF7;
-  color: #396BF7;
+  border: 5px solid #FF5700;
+  color: #FF5700;
   font-weight: bold;
 }
 /* ___________________________________________________ */
@@ -243,7 +227,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #FF5700;
+  background-color: #819c27;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -253,7 +237,7 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #24243C;
+  color: #232126;
   display: block;
   transition: 0.3s;
 }
@@ -281,13 +265,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #24243C;
+  background: #232126;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:#FF5700; 
-  border-radius: 20px;
+  background:#819c27; 
 }
 
 /* Handle on hover */

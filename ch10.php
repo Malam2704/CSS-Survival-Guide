@@ -13,9 +13,7 @@
 
             </main>
 
-            <div class="centering">
-                <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh10.php'"/>
-            </div>
+            <input type="button" value="Ready to take the Chapter Quiz? Test your knowledge" onclick="window.location='QuizFormCh10.php'"/>
 
             <?php
                 include "assets/inc/commentSection.php";
